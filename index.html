@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,11 +9,13 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
         integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous">
-    </script>
+        </script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,400i,700">
 
 </head>
+
 <body>
     <nav class="border md:h-16 pt-2 w-[100%]  bg-blue-900">
         <div class="container mx-auto flex flex-wrap items-center justify-between">
@@ -21,11 +24,12 @@
                 class="md:hidden ml-3 text-gray-400 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-300 rounded-lg inline-flex items-center justify-center"
                 aria-controls="mobile-menu-2" aria-expanded="false">
                 <span class="sr-only">Open main menu</span>
-                <svg class="w-6 h-6" fill="currentColor" style="color:white" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <svg class="w-6 h-6" fill="currentColor" style="color:white" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd"
                         d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
                         clip-rule="evenodd"></path>
-                        
+
                 </svg>
                 <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd"
@@ -36,13 +40,12 @@
             <a href="index.html">
                 <img src="./img/LOGO_SISNOVATE_FINAL_WHITE.png" alt=""
                     class="md:h-[6rem] md:w-[7rem] md:pb-14 md:pl-4 h-[2rem] w-[6rem] pr-4"></a>
-                  
-                
+
+
 
             <div class="hidden md:block w-full md:w-auto" id="mobile-menu">
-               
-                <ul
-                    class="flex-col md:flex-row flex md:space-x-3 mt-4 md:mt-0 md:text-sm md:font-medium md:pb-12 ">
+
+                <ul class="flex-col md:flex-row flex md:space-x-3 mt-4 md:mt-0 md:text-sm md:font-medium md:pb-12 ">
                     <li>
                         <a href="index.html"
                             class="  md:hover:border md:hover:border-white block p-4  py-2   rounded focus:outline-none md:text-lg md:font-semibold text-white"
@@ -51,7 +54,8 @@
                     <hr class="bg-transparent">
                     <li>
                         <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
-                            class="md:hover:border md:hover:border-white p-4  py-2  font-medium flex items-center justify-between w-full md:w-auto text-white md:text-lg md:font-semibold">ABOUT US
+                            class="md:hover:border md:hover:border-white p-4  py-2  font-medium flex items-center justify-between w-full md:w-auto text-white md:text-lg md:font-semibold">ABOUT
+                            US
                             <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd"
@@ -96,7 +100,7 @@
                     <li>
                         <a href="support.html"
                             class="md:hover:border md:hover:border-white block p-4  py-2   rounded focus:outline-none md:text-lg md:font-semibold text-white"
-                            aria-current="page">NEWS &EVENTS</a>
+                            aria-current="page">NEWS & EVENTS</a>
                     </li>
                     <hr class="bg-transparent">
                     <li>
@@ -104,173 +108,739 @@
                             class="md:hover:border md:hover:border-white block p-4  py-2   rounded focus:outline-none md:text-lg md:font-semibold text-white"
                             aria-current="page">FACULTY MEMBERS</a>
                     </li>
-                   
-                    
-                    
+
+
+
                 </ul>
-                
+
             </div>
             <div class="hidden sm:block text-white pb-10">
                 <button class="btn btn-primary mr-2">Login</button>/
                 <button class="btn btn-outline-primary mr-2">Register</button>
-              </div>
-        
+            </div>
+
         </div>
-       
-     
+
+
     </nav>
     <!DOCTYPE html>
-<html lang="en">
+    <html lang="en">
 
-<head>
-  <meta charset="utf-8" />
-  <title>Swiper demo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <head>
+        <meta charset="utf-8" />
+        <title>Swiper demo</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
 
-  
-</head>
 
-<body>
+    </head>
 
-  <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" navigation="true" space-between="30"
-    loop="true">
-   
- 
-    <swiper-slide>
-        <div class="relative ">
-            <div class="md:h-[43rem] h-[20rem] bg-center bg-cover" style="background-image: url('./reading.jpg')">
-              <div class="absolute  bottom-0 ">
-                <div class="md:pb-20 md:pl-20 pl-4 text-transparent">
-                    <h2 class=" md:text-6xl text-3xl text-white opacity-90 font-bold md:mb-4">EDUCATING </h2>
-                    <span class=" md:text-4xl text-2xl text-white pb-2">LEADERS OF CHARACTERS</span>
-                    <button class="border border-black"></button>
+    <body>
+
+        <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" navigation="true"
+            space-between="30" loop="true">
+
+
+            <swiper-slide>
+                <div class="relative ">
+                    <div class="md:h-[43rem] h-[20rem] bg-center bg-cover"
+                        style="background-image: url('./reading.jpg')">
+                        <div class="absolute  bottom-0 ">
+                            <div class="md:pb-20 md:pl-20 pl-4 text-transparent">
+                                <h2 class=" md:text-6xl text-3xl text-white opacity-90 font-bold md:mb-4">EDUCATING
+                                </h2>
+                                <span class=" md:text-4xl text-2xl text-white pb-2">LEADERS OF CHARACTERS</span>
+                                <button class="border border-black"></button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-            </div>
-          </div>    
-    </swiper-slide>
-    <swiper-slide>
-        <div class="relative ">
-            <div class="md:h-[43rem] h-[20rem] bg-center bg-cover" style="background-image: url('./reading.jpg')">
-              <div class="absolute  bottom-0 ">
-                <div class="md:pb-20 md:pl-20 pl-4 text-transparent">
-                    <h2 class=" md:text-6xl text-3xl text-white opacity-90 font-bold md:mb-4">EDUCATING </h2>
-                    <span class=" md:text-4xl text-2xl text-white pb-2">LEADERS OF CHARACTERS</span>
-                    <button class="border border-black"></button>
+            </swiper-slide>
+            <swiper-slide>
+                <div class="relative ">
+                    <div class="md:h-[43rem] h-[20rem] bg-center bg-cover"
+                        style="background-image: url('./reading.jpg')">
+                        <div class="absolute  bottom-0 ">
+                            <div class="md:pb-20 md:pl-20 pl-4 text-transparent">
+                                <h2 class=" md:text-6xl text-3xl text-white opacity-90 font-bold md:mb-4">EDUCATING
+                                </h2>
+                                <span class=" md:text-4xl text-2xl text-white pb-2">LEADERS OF CHARACTERS</span>
+                                <button class="border border-black"></button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-            </div>
-          </div>    
-    </swiper-slide>
-    <swiper-slide>
-        <div class="relative ">
-            <div class="md:h-[43rem] h-[20rem] bg-center bg-cover" style="background-image: url('./reading.jpg')">
-              <div class="absolute  bottom-0 ">
-                <div class="md:pb-20 md:pl-20 pl-4 text-transparent">
-                    <h2 class=" md:text-6xl text-3xl text-white opacity-90 font-bold md:mb-4">EDUCATING </h2>
-                    <span class=" md:text-4xl text-2xl text-white pb-2">LEADERS OF CHARACTERS</span>
-                    <button class="border border-black"></button>
+            </swiper-slide>
+            <swiper-slide>
+                <div class="relative ">
+                    <div class="md:h-[43rem] h-[20rem] bg-center bg-cover"
+                        style="background-image: url('./reading.jpg')">
+                        <div class="absolute  bottom-0 ">
+                            <div class="md:pb-20 md:pl-20 pl-4 text-transparent">
+                                <h2 class=" md:text-6xl text-3xl text-white opacity-90 font-bold md:mb-4">EDUCATING
+                                </h2>
+                                <span class=" md:text-4xl text-2xl text-white pb-2">LEADERS OF CHARACTERS</span>
+                                <button class="border border-black"></button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-            </div>
-          </div>    
-    </swiper-slide>
-    <swiper-slide>
-        <div class="relative ">
-            <div class="md:h-[43rem] h-[20rem] bg-center bg-cover" style="background-image: url('./reading.jpg')">
-              <div class="absolute  bottom-0 ">
-                <div class="md:pb-20 md:pl-20 pl-4 text-transparent">
-                    <h2 class=" md:text-6xl text-3xl text-white opacity-90 font-bold md:mb-4">EDUCATING </h2>
-                    <span class=" md:text-4xl text-2xl text-white pb-2">LEADERS OF CHARACTERS</span>
-                    <button class="border border-black"></button>
+            </swiper-slide>
+            <swiper-slide>
+                <div class="relative ">
+                    <div class="md:h-[43rem] h-[20rem] bg-center bg-cover"
+                        style="background-image: url('./reading.jpg')">
+                        <div class="absolute  bottom-0 ">
+                            <div class="md:pb-20 md:pl-20 pl-4 text-transparent">
+                                <h2 class=" md:text-6xl text-3xl text-white opacity-90 font-bold md:mb-4">EDUCATING
+                                </h2>
+                                <span class=" md:text-4xl text-2xl text-white pb-2">LEADERS OF CHARACTERS</span>
+                                <button class="border border-black"></button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
+            </swiper-slide>
+        </swiper-container>
+        <div class="md:pt-8  md:block ">
+            <div class="md:flex ">
+
+                <div data-aos="fade-down-right">
+                    <img src="./img/img1.jpg" alt="" class=" md:pl-6 md:h-[17rem] md:w-[35rem] md:pt-12">
+                </div>
+                <div data-aos="fade-down-left">
+                    <img src="./img/img2.jpg" alt="" class="md:pl-3   md:h-[300px] md:w-[40REM]">
+                </div>
+                <div class="md:float-right md:pt-12  md:block w-[60%] h-[20rem] pl-6 ">
+                    <h1 class="text-2xl font-bold text-blue-900">More than 50 years of experince</h1>
+                    <p class="pt-4"> adipisicing elit. Doloremque qui quisquam eligendi illum tenetur recusandae atque
+                        iste possimus mollitia vitae. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta,
+                        sit hic. Soluta atque, ullam officia eius culpa distinctio voluptatem nesciunt. Lorem, ipsum
+                        dolor sit amet consectetur adipisicing elit. Possimus exercitationem sed aspernatur, provident
+                        recusandae dignissimos quibusdam natus. Veniam eos inventore, dolore, et deserunt dolor vitae
+                        omnis illum voluptatum corporis consequatur?</p>
+                </div>
+
             </div>
-          </div>  
-    </swiper-slide>
-    </swiper-container>
-    <div class="pt-8 hidden md:block ">
-        <div class="md:flex ">
-           
-            <div data-aos="fade-down-right">
-                <img src="./img/img1.jpg" alt="" class=" pl-6 h-[17rem] w-[35rem] pt-12">  
-            </div>
-            <div data-aos="fade-down-left">
-                <img src="./img/img2.jpg" alt="" class="pl-3   h-[300px] w-[40REM]">
-            </div>
-            <div class="float-right pt-12 hidden md:block w-[60%] h-[20rem] pl-6 ">
-                <h1 class="text-2xl font-bold text-blue-900">More than 50 years of experince</h1>
-                <p class="pt-4"> adipisicing elit. Doloremque qui quisquam eligendi illum tenetur recusandae atque iste possimus mollitia vitae. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, sit hic. Soluta atque, ullam officia eius culpa distinctio voluptatem nesciunt.  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus exercitationem sed aspernatur, provident recusandae dignissimos quibusdam natus. Veniam eos inventore, dolore, et deserunt dolor vitae omnis illum voluptatum corporis consequatur?</p>  
-            </div>
-            
-        </div>    
-       
-    </div>
-    <div class="pt-44 hidden md:block ">
-        <div class="flex w-[70%] h-[20rem]  ">
-            <div data-aos="fade-up-right" class="">
-                <img src="./img/img3.jpg" alt="" class=" pl-6 w-[30rem] h-[18rem] -mt-[14rem] border-8  border-white   ">
-            </div>
-            <div data-aos="fade-up-left">
-                <img src="./img/img4.jpg" alt="" class="   -mt-[11.5rem] w-[18rem] h-[13rem] ">
-            </div>
-            <div data-aos="fade-down-left">
-                <img src="./img/download.jpg" alt="" class=" pl-2  -mt-[11.5rem] w-[18rem] h-[13rem] ">
-            </div>
-        </div>    
-       
-    </div>
-    <div class="pt-8 md:hidden sm:block ">
-        <div class="p-2 ">
-            <h1 class="text-2xl font-bold text-blue-900">More than 50 years of experince</h1>
-            <p class="pt-4"> adipisicing elit. Doloremque qui quisquam eligendi illum tenetur recusandae atque iste possimus mollitia vitae. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, sit hic. Soluta atque, ullam officia eius culpa distinctio voluptatem nesciunt.  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus exercitationem sed aspernatur, provident recusandae dignissimos quibusdam natus. Veniam eos inventore, dolore, et deserunt dolor vitae omnis illum voluptatum corporis consequatur?</p>  
+
         </div>
-       
-        
-        <div class="flex pt-10">
-            <div data-aos="fade-down-right">
-                <img src="./img/img1.jpg" alt="" class="w-[23rem] h-[8rem] pl-3">  
+        <div class="md:pt-44  md:block ">
+            <div class="md:flex md:w-[70%]   ">
+                <div data-aos="fade-up-right" class="">
+                    <img src="./img/img3.jpg" alt=""
+                        class=" md:pl-6 md:w-[30rem] h-[18rem] -mt-[14rem] border-8  border-white   ">
+                </div>
+                <div data-aos="fade-up-left">
+                    <img src="./img/img4.jpg" alt="" class="   -mt-[11.5rem] w-[18rem] h-[13rem] ">
+                </div>
+                <div data-aos="fade-down-left">
+                    <img src="./img/download.jpg" alt="" class=" pl-2  -mt-[11.5rem] w-[18rem] h-[13rem] ">
+                </div>
             </div>
-            <div data-aos="fade-down-left">
-                <img src="./img/img2.jpg" alt="" class="w-[23rem] h-[8rem] pl-3 pr-3 ">
-            </div>
-            
-            
-        </div>    
-       
-    </div>
-    <div class="pt-44 md:hidden sm:block ">
-        <div class="flex  ">
-            <div data-aos="fade-up-right" class="">
-                <img src="./img/img3.jpg" alt="" class="pl-3 -mt-[10rem] w-[23rem] h-[8rem]">
-            </div>
-            <div data-aos="fade-up-left">
-                <img src="./img/img4.jpg" alt="" class="pr-3  pl-3 -mt-[10rem] w-[23rem] h-[8rem]  ">
-            </div>
-            
-        </div>  
-       
-        
-    </div>
-    <div class="h-[50rem] md:hidden sm:block">
-        <div data-aos="fade-up"
-        data-aos-anchor-placement="top-center"><img src="./img/download.jpg" alt="" class="pr-3  pl-3 h-[8rem] w-[46rem] -mt-5">
+
         </div>
-    </div>
-    
-   
+        <div class="border-2 m-2  bg-gray-800 p-6 mt-16">
+            <div class="border-2 bg-gray-600 ">
+                <div class="container">
+                    <div class="typewriter text-white p-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        Iste harum, explicabo quasi doloribus quos quae necessitatibus corporis non labore quibusdam.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pt-8">
+            <h1 class="text-4xl font-bold text-center">OUR EVENTS</h1>
+        </div>
+        <style>
+            .container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+
+                font-family: Raleway;
+                font-weight: bold;
+            }
+
+            .typewriter {
+                width: 30ch;
+                white-space: nowrap;
+                overflow: hidden;
+                border-right: 4px solid #212121;
+                animation: cursor 5s step-start infinite, text 15s steps(200) alternate infinite;
+            }
+
+            @keyframes cursor {
+                from {
+                    border-color: #212121;
+                }
+
+                to {
+                    border-color: transparent;
+                }
+            }
+
+            @keyframes text {
+                from {
+                    width: 0;
+                }
+
+                to {
+                    width: 100%;
+                }
+            }
+        </style>
+        <section>
+            <style>
+                .event-calendar *,
+                .event-calendar div {
+                    -webkit-transition: all 0.3s ease;
+                    -moz-transition: all 0.3s ease;
+                    -ms-transition: all 0.3s ease;
+                    -o-transition: all 0.3s ease;
+                    transition: all 0.3s ease;
+                }
+
+
+                .event-calendar {
+                    border: 1px solid #ddd;
+                    width: 400px;
+                    margin: 40px;
+                    min-width: 300px;
+                    background: #ddd;
+
+                }
+
+                .event-calendar a {
+                    text-decoration: none;
+                    color: #181718;
+
+
+                }
+
+                .event-calendar a:hover {
+                    opacity: .7;
+                    color: #f00;
+                }
+
+                .event-calendar a:hover .title-event {
+                    transform: translate(5%, 0);
+                    -webkit-transform: translate(5%, 0);
+                    -moz-transform: translate(5%, 0);
+
+                }
+
+
+
+                .event-calendar ul,
+                .event-calendar ul li,
+                .event-calendar h1,
+                .event-calendar h2 {
+                    margin: 0;
+                    padding: 0;
+                    list-style: none;
+                }
+
+                .event-calendar .events-body ul li {
+                    position: relative;
+                    border-bottom: 1px solid #777474;
+                }
+
+                .event-calendar .events-body ul li:last-child {
+                    border: 0;
+                }
+
+                .event-calendar .heading-title {
+                    padding: 10px 20px;
+                    text-transform: uppercase;
+                    border-bottom: 4px solid #000;
+                    font-size: .9em;
+                    position: relative;
+                    font-family: 'Roboto', sans-serif;
+                }
+
+                .event-calendar .icon-box {
+                    position: absolute;
+                    right: 20px;
+                    top: 0;
+                    bottom: 0;
+                    margin: auto;
+                    height: 30px;
+                    font-size: 1.8em;
+                }
+
+                /* EVENTS LEFT CONTES */
+                .event-calendar .event-left-content {
+                    padding: 15px 20px;
+                }
+
+
+                .event-calendar .event-left-content .title-event,
+                .event-calendar .event-left-content .title-event h2,
+                .event-calendar .event-left-content .event-date,
+                .event-calendar .event-left-content .event-location {
+                    font-family: 'Roboto', sans-serif;
+                }
+
+                .event-calendar .event-left-content .title-event {
+                    width: 80%;
+                }
+
+                .event-calendar .event-left-content .title-event h2 {
+                    text-transform: uppercase;
+                    margin: 0;
+                    padding: 0;
+                }
+
+                .event-calendar .event-left-content .event-date {
+                    font-size: .8em;
+                }
+
+                .event-calendar .event-left-content .event-location {
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    font-size: .8em;
+                }
+
+
+                /* EVENT ICON HOLDER  */
+                .event-calendar .event-icon {
+                    position: absolute;
+                    width: auto;
+                    height: 50px;
+                    display: block;
+                    background: #f00;
+                    right: 20px;
+                    top: 0;
+                    bottom: 0;
+                    margin: auto;
+                    text-align: center;
+                    color: #fff;
+
+                    -webkit-border-radius: 8px;
+                    border-radius: 8px;
+
+                    padding: 0px 12px;
+
+                }
+
+                .event-calendar .event-icon .month,
+                .event-calendar .event-icon .date {
+                    display: block;
+                }
+
+                .event-calendar .event-icon .month {
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    font-size: 1.1em;
+
+                }
+
+                .event-calendar .event-icon .date {
+                    font-size: 1.1em;
+                    font-weight: bold;
+
+                }
 
 
 
 
-  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-      <script src="https://unpkg.com/@themesberg/flowbite@1.1.1/dist/flowbite.bundle.js"></script>
+                /* FOR RESPONSIVE ONLY  */
+                @media only screen and (max-width:480px) {
+                    .event-calendar {
+                        width: 100%;
+                        margin: 0;
+                    }
+
+                    .event-calendar .heading-title h1 {
+                        font-size: 1em;
+                    }
+
+                    .event-calendar .title-event h2 {
+                        font-size: .9em;
+                    }
+
+                    .event-calendar .event-left-content .event-date,
+                    .event-calendar .event-left-content .event-location {
+                        font-size: .8em;
+                    }
 
 
-</body>
+                }
+            </style>
+            <div class="main">
+                <ul class="cards">
+                    <li class="cards_item">
+                        <div class="card">
+                            <div class="card_image"><img
+                                    src="https://assets.codepen.io/652/photo-1468777675496-5782faaea55b.jpeg"
+                                    alt="mixed vegetable salad in a mason jar. "></div>
+                            <div class="card_content">
+                                <h2 class="card_title">Farmstand Salad &#x2022; $9</h2>
+                                <div class="card_text">
+                                    <p>Dig into the freshest veggies of the season! This salad-in-a-jar features a
+                                        mixture of leafy greens and seasonal vegetables, fresh from the farmer's market.
+                                    </p>
+                                    <p>Served with your choice of dressing on the side: housemade ranch, cherry balsamic
+                                        vinaigrette, creamy chipotle, avocado green goddess, or honey mustard. Add your
+                                        choice of protein for $2 more. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
 
-</html>
+                    <li class="cards_item">
+                        <div class="card">
+                            <div class="card_image"><img
+                                    src="https://assets.codepen.io/652/photo-1520174691701-bc555a3404ca.jpeg"
+                                    alt="a Reuben sandwich on wax paper. "></div>
+                            <div class="card_content">
+                                <h2 class="card_title">Ultimate Reuben &#x2022; $18</h2>
+                                <div class="card_text">
+                                    <p>All great meals take time, but this one takes it to the next level! More than 650
+                                        hours of fermenting, brining, aging, and curing goes into each and every one of
+                                        our legendary Reuben sandwiches.
+                                    </p>
+                                    <p>Every element of this extraordinary sandwich is handcrafted in our kitchens, from
+                                        the rye bread baked from our secret recipe to the cave-aged Swiss cheese, right
+                                        down to the pickle. The only thing we didn't make on the premises is the
+                                        toothpick ( but we're looking into how to do that). </p>
+                                    <p>This unforgettable sandwich has all of the classic Reuben elements: corned beef,
+                                        rye bread, creamy Russian dressing, sauerkraut, plus a sweet gherkin pickle. No
+                                        substitions please!
+                                    <p>
+                                    <p>Add a side of french fries or sweet potato fries for $2 more, or our housemade
+                                        pub chips for $1.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cards_item">
+                        <div class="card">
+                            <div class="card_image"><img
+                                    src="https://assets.codepen.io/652/photo-1544510808-91bcbee1df55.jpeg"
+                                    alt="A side view of a plate of figs and berries. "></div>
+                            <div class="card_content">
+                                <h2 class="card_title">Fig &amp; Berry Plate &#x2022; $16</h2>
+                                <div class="card_text">
+                                    <p><span class="note">Seasonal.</span></p>
+                                    <p>A succulent sextet of fresh figs join with a selection of bodacious seasonal
+                                        berries in this refreshing, shareable dessert.</p>
+                                    <p>Choose your drizzle: cherry-balsamic vinegar, local honey, or housemade chocolate
+                                        sauce. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <style>
+                    
+                  
+
+
+                    .cards {
+                        display: grid;
+                        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                        list-style: none;
+                        margin: 0;
+                        padding: 0;
+                    }
+
+                    .cards_item {
+                        display: flex;
+                        padding: 1rem;
+                    }
+
+                    .card_image {
+                        height: calc(13*1.2rem);
+                        padding: 1.2rem 1.2rem 0;
+                        position: relative;
+                    }
+
+                    .card_image:before,
+                    .card_image:after {
+                        content: "";
+                        position: absolute;
+                        width: 20px;
+                        left: 60%;
+                        top: 0;
+                        height: 45px;
+                        background: #e6e6e6b8;
+                        transform: rotate(45deg);
+                    }
+
+                    .card_image:after {
+                        transform: rotate(-45deg);
+                        top: auto;
+                        bottom: -22px;
+                        left: 40%;
+                    }
+
+                    .card_image img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+
+                    .cards_item {
+                        filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.25));
+                    }
+
+
+                    .card {
+                        background-color: white;
+                        border-radius: 0.25rem;
+                        display: flex;
+                        flex-direction: column;
+                        overflow: hidden;
+                        padding-left: 30px;
+                        background: repeating-linear-gradient(#0000 0 calc(1.2rem - 1px), #66afe1 0 1.2rem) right bottom /100% 100%, linear-gradient(red 0 0) 30px 0/2px 100% #fff;
+                        background-repeat: no-repeat;
+                        line-height: 1.2rem;
+                        -webkit-mask: radial-gradient(circle .8rem at 2px 50%, #0000 98%, #000)0 0/100% 2.4rem;
+                    }
+
+                    .card_content {
+                        padding: 1.2rem;
+                    }
+
+                    h2.card_title,
+                    p {
+                        margin: 1.2rem 0;
+                    }
+
+                    h2.card_title {
+                        font-size: 1.3em;
+                    }
+
+
+                    html {
+                        font-size: 15px;
+                    }
+                </style>
+            </div>
+            <section class="flex">
+                <div class="event-calendar">
+                    <div class="heading-title">
+                        <h1 class="font-bold text-2xl ">Upcoming Events </h1>
+                        <div class="icon-box">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                    </div>
+                    <div class="events-body">
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <div class="event-left-content">
+                                        <div class="title-event">
+                                            <h2 class="font-semibold"> sample event</h2>
+                                            <div class="event-date"> Feb 5, 2018</div>
+                                            <div class="event-location"> Alberta</div>
+                                        </div>
+                                    </div>
+                                    <div class="event-icon ">
+                                        <div class="month">jan </div>
+                                        <div class="date">01 </div>
+                                    </div>
+                                </a>
+                            </li>
+
+
+                            <li>
+                                <a href="">
+                                    <div class="event-left-content">
+                                        <div class="title-event">
+                                            <h2> sample event</h2>
+                                            <div class="event-date"> Feb 5, 2018</div>
+                                            <div class="event-location"> Alberta</div>
+                                        </div>
+                                    </div>
+                                    <div class="event-icon">
+                                        <div class="month">jan </div>
+                                        <div class="date">01 </div>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="">
+                                    <div class="event-left-content">
+                                        <div class="title-event">
+                                            <h2> sample event</h2>
+                                            <div class="event-date"> Feb 5, 2018</div>
+                                            <div class="event-location"> Alberta</div>
+                                        </div>
+                                    </div>
+                                    <div class="event-icon">
+                                        <div class="month">jan </div>
+                                        <div class="date">01 </div>
+                                    </div>
+                                </a>
+                            </li>
+
+
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="border-transparent mt-[40px] w-[80%] mr-2" style="background-color: #ddd;">
+                    <div class="">
+                        <h1 class="text-3xl font-bold pl-4">Recent News</h1>
+                        <i style="font-size:30px" class="fa float-right -mt-7 mr-5">&#xf1ea;</i>
+                        <hr class="bg-black mt-[19px] pt-[4px] border-b-4">
+                       <div class="flex space-x-4 px-2">
+                        <div class="content">
+                            <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">
+                                <div class="content-overlay"></div>
+                                <img class="content-image" src="https://source.unsplash.com/HkTMcmlMOUQ" alt="">
+                                <div class="content-details fadeIn-bottom">
+                                    <h3 class="content-title">This is a title</h3>
+                                    <p class="content-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea ut saepe quo expedita facilis, ratione tempore recusandae quidem quas atque repellendus consequuntur quod mollitia molestiae reiciendis asperiores doloremque ad et!</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="content">
+                            <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">
+                                <div class="content-overlay"></div>
+                                <img class="content-image" src="https://source.unsplash.com/HkTMcmlMOUQ" alt="">
+                                <div class="content-details fadeIn-bottom">
+                                    <h3 class="content-title">This is a title</h3>
+                                    <p class="content-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus molestias nam minima nemo hic ea, error reprehenderit iure vel ipsum architecto corrupti ex dolor reiciendis mollitia, in voluptatem, voluptate nihil.</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="content">
+                            <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">
+                                <div class="content-overlay"></div>
+                                <img class="content-image" src="https://source.unsplash.com/HkTMcmlMOUQ" alt="">
+                                <div class="content-details fadeIn-bottom">
+                                    <h3 class="content-title">This is a title</h3>
+                                    <p class="content-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, quo quae. Maxime autem, reprehenderit at deserunt aut ab eligendi ipsam ipsa tempore illo fuga nemo repudiandae, aliquid modi quisquam obcaecati?</p>
+                                </div>
+                            </a>
+                        </div>
+                       </div>
+                    </div>
+
+
+
+                </div>
+
+                </div>
+                <style>
+                    .con {
+                        padding: 1em 0;
+                        float: left;
+                        width: 50%;
+                        
+                    }
+
+                    @media screen and (max-width: 640px) {
+                        .con {
+                            display: block;
+                            width: 100%;
+                        }
+                    }
+
+                    @media screen and (min-width: 900px) {
+                        .con {
+                            width: 33.33333%;
+                        }
+                    }
+
+                    .con .title {
+                        color: #1a1a1a;
+                        text-align: center;
+                        margin-bottom: 10px;
+                    }
+
+                    .content {
+                        position: relative;
+                        width: 90%;
+                        max-width: 400px;
+                        margin: auto;
+                        overflow: hidden;
+                            
+                    }
+
+                    .content .content-overlay {
+                        background: rgba(0, 0, 0, 0.7);
+                        position: absolute;
+                        height: 99%;
+                        width: 100%;
+                        left: 0;
+                        top: 0;
+                        bottom: 0;
+                        right: 0;
+                        opacity: 0;
+                        -webkit-transition: all 0.4s ease-in-out 0s;
+                        -moz-transition: all 0.4s ease-in-out 0s;
+                        transition: all 0.4s ease-in-out 0s;
+                    }
+
+                    .content:hover .content-overlay {
+                        opacity: 1;
+                    }
+
+                    .content-image {
+                        width: 100%;
+                    }
+
+                    .content-details {
+                        position: absolute;
+                        text-align: center;
+                        padding-left: 1em;
+                        padding-right: 1em;
+                        width: 100%;
+                        top: 50%;
+                        left: 50%;
+                        opacity: 0;
+                        -webkit-transform: translate(-50%, -50%);
+                        -moz-transform: translate(-50%, -50%);
+                        transform: translate(-50%, -50%);
+                        -webkit-transition: all 0.3s ease-in-out 0s;
+                        -moz-transition: all 0.3s ease-in-out 0s;
+                        transition: all 0.3s ease-in-out 0s;
+                    }
+
+                    .content:hover .content-details {
+                        top: 50%;
+                        left: 50%;
+                        opacity: 1;
+                    }
+
+                    .content-details h3 {
+                        color: #fff;
+                        font-weight: 500;
+                        letter-spacing: 0.15em;
+                        margin-bottom: 0.5em;
+                        text-transform: uppercase;
+                    }
+
+                    .content-details p {
+                        color: #fff;
+                        font-size: 0.8em;
+                    }
+
+                    .fadeIn-bottom {
+                        top: 80%;
+                    }
+                </style>
+                </div>
+            </section>
+
+
+
+
+
+
+
+            <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+            <script>
+                AOS.init();
+            </script>
+            <script src="https://unpkg.com/@themesberg/flowbite@1.1.1/dist/flowbite.bundle.js"></script>
+    </body>
+
+    </html>
