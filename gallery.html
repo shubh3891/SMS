@@ -16,11 +16,11 @@
 body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-  gap: 0rem;
-  padding: 1rem;
+  gap: 2;
+  
 }
 
-.card {
+.cards {
   height: fit-content;
   display: flex;
   flex-direction: column;
@@ -30,13 +30,13 @@ body {
   border-radius: 3px;
 }
 
-.card > img {
+.cards > img {
   width: 100%;
   height: auto;
   aspect-ratio: 600/300;
 }
 
-.card > h2 {
+.cards > h2 {
   margin-top: 1rem;
   font-family: "Kalam", cursive;
   font-weight: normal;
@@ -45,7 +45,7 @@ body {
   text-align: center;
 }
 
-.card > p {
+.cards > p {
   font-family: "Kalam", cursive;
   font-size: 1rem;
   color: #5e5e89;
@@ -55,7 +55,8 @@ body {
       </style>
     
 </head>
-<body>
+<body >
+  
     <script>
         function makeText() {
           const lorem = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum veritatis eaque necessitatibus, explicabo vero hic, perspiciatis unde minus error consectetur, quos sunt officiis ad repellendus pariatur eligendi tempora praesentium tenetur';
@@ -70,9 +71,9 @@ body {
           return 'rotate(' + deg + 'deg)';
         }
     
-        for (let i = 1; i < 13; i++) {
+        for (let i = 1; i < 11; i++) {
           document.write(`
-            <div class="card" style="transform: ${randomRotate()};">
+            <div class="cards" style="transform: ${randomRotate()};">
               <img src="https://picsum.photos/id/${i + 19 * i}/600/300" />
               <h2>Card Title</h2>
               <p>${makeText()}</p>
