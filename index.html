@@ -17,10 +17,20 @@
     <link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/styles/tailwind.css">
     <link rel="stylesheet"
         href="https://demos.creative-tim.com/notus-js/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="style.css">   
+    
+    
 </head>
 
 <body>
-    <nav class="border md:h-16 pt-2 w-[100%]  bg-blue-900">
+    <nav class=" sticky-nav border md:h-16 pt-2 w-[100%]  bg-blue-900">
+        <style>
+            .sticky-nav {
+              position: sticky;
+              top: 0;
+              z-index: 999;
+            }
+          </style> 
         <div class=" mx-auto flex flex-wrap items-center justify-between">
 
             <button data-collapse-toggle="mobile-menu" type="button"
@@ -48,7 +58,7 @@
 
             <div class="hidden md:block w-full md:w-auto" id="mobile-menu">
 
-                <ul class="flex-col md:flex-row flex md:space-x-3 mt-4 md:mt-0 md:text-sm md:font-medium md:pb-12 ">
+                <ul class="flex-col md:flex-row flex md:space-x-3 mt-4 md:mt-0 md:text-sm md:font-medium md:pb-12 md:mr-28 ">
                     <li>
                         <a href="index.html"
                             class="  md:hover:border md:hover:border-white block p-4  py-2   rounded focus:outline-none md:text-lg md:font-semibold text-white"
@@ -56,8 +66,9 @@
                     </li>
                     <hr class="bg-transparent">
                     <li>
+                        <a href="#">
                         <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
-                            class="md:hover:border md:hover:border-white p-4  py-2  font-medium flex items-center justify-between w-full md:w-auto text-white md:text-lg md:font-semibold">ACADEMICS
+                            class="md:hover:border md:hover:border-white p-4  py-2   flex items-center justify-between w-full md:w-auto text-white md:text-lg md:font-semibold">ACADEMICS
                             
                             <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -70,12 +81,12 @@
                             class="hidden bg-white text-base z-10 list-none divide-y divide-gray-100 rounded shadow my-4 w-44">
                             <ul class="py-1" aria-labelledby="dropdownLargeButton">
                                 <li>
-                                    <a href="#"
+                                    <a href="onlineregistration.html"
                                         class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Online Registration</a>
                                 </li>
                                 <hr class="bg-black">
                                 <li>
-                                    <a href="#"
+                                    <a href="enquiry.html"
                                         class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Enquiry</a>
                                 </li>
                                 
@@ -83,11 +94,12 @@
                             </ul>
 
                         </div>
+                        </a>
                     </li>
                     
                     <hr class="bg-transparent">
                     <li>
-                        <a href="faq.html"
+                        <a href="gallery.html"
                             class="md:hover:border md:hover:border-white block p-4  py-2   rounded focus:outline-none md:text-lg md:font-semibold text-white"
                             aria-current="page">GALLERY</a>
                     </li>
@@ -99,15 +111,21 @@
                     </li>
                     <hr class="bg-transparent">
                     <li>
-                        <a href="support.html"
+                        <a href="news&events.html"
                             class="md:hover:border md:hover:border-white block p-4  py-2   rounded focus:outline-none md:text-lg md:font-semibold text-white"
                             aria-current="page">NEWS & EVENTS</a>
                     </li>
                     <hr class="bg-transparent">
                     <li>
-                        <a href="#"
+                        <a href="faculty.html"
                             class="md:hover:border md:hover:border-white block p-4  py-2   rounded focus:outline-none md:text-lg md:font-semibold text-white"
                             aria-current="page">FACULTY MEMBERS</a>
+                    </li>
+                    <hr class="bg-transparent">
+                    <li>
+                        <a href="contact.html"
+                            class="md:hover:border md:hover:border-white block p-4  py-2   rounded focus:outline-none md:text-lg md:font-semibold text-white"
+                            aria-current="page">CONTACT US</a>
                     </li>
 
 
@@ -115,10 +133,7 @@
                 </ul>
 
             </div>
-            <div class="hidden sm:block text-white pb-10">
-                <button class="btn btn-primary mr-2">Login</button>/
-                <button class="btn btn-outline-primary mr-2">Register</button>
-            </div>
+           
 
         </div>
 
@@ -150,7 +165,7 @@
                                 <h2 class=" md:text-6xl text-3xl text-white opacity-90 font-bold md:mb-4">EDUCATING
                                 </h2>
                                 <span class=" md:text-4xl text-2xl text-white pb-2">LEADERS OF CHARACTERS</span>
-                                <button class="border border-black"></button>
+                               
                             </div>
                         </div>
                     </div>
@@ -202,6 +217,57 @@
                 </div>
             </swiper-slide>
         </swiper-container>
+        <style>
+            .scroll-to-top {
+              display: none;
+              position: fixed;
+              bottom: 20px;
+              right: 20px;
+              z-index: 999;
+            }
+          </style>
+          <script>
+            function scrollToTop() {
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+        
+            window.onscroll = function() {
+              var scrollToTopButton = document.getElementById('scrollToTopButton');
+              if (window.pageYOffset > 200) {
+                scrollToTopButton.style.display = 'block';
+              } else {
+                scrollToTopButton.style.display = 'none';
+              }
+            };
+          </script>
+       
+          <style>
+            .scroll-to-top {
+              display: none;
+              position: fixed;
+              bottom: 20px;
+              right: 20px;
+              z-index: 999;
+            }
+          </style>
+          <script>
+            function scrollToTop() {
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+        
+            window.onscroll = function() {
+              var scrollToTopButton = document.getElementById('scrollToTopButton');
+              if (window.pageYOffset > 200) {
+                scrollToTopButton.style.display = 'block';
+              } else {
+                scrollToTopButton.style.display = 'none';
+              }
+            };
+          </script>
+       
+          <button id="scrollToTopButton" class="scroll-to-top bg-gray-800 hover:bg-gray-700 text-white py-2 px-4 rounded-full" onclick="scrollToTop()">
+            <i class="fa fa-angle-up" aria-hidden="true"></i>
+          </button>
         <div class="pt-8 h-[20rem] pl-6 md:hidden sm:block ">
             <h1 class="text-2xl font-bold text-blue-900">More than 50 years of experince</h1>
             <p class="pt-2 text-lg"> adipisicing elit. Doloremque qui quisquam eligendi illum tenetur recusandae atque
@@ -263,223 +329,9 @@
        
 
        
-        <style>
-            .container {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-
-
-                font-family: Raleway;
-                font-weight: bold;
-            }
-
-            .typewriter {
-                width: 30ch;
-                white-space: nowrap;
-                overflow: hidden;
-                border-right: 4px solid #212121;
-                animation: cursor 5s step-start infinite, text 15s steps(200) alternate infinite;
-            }
-
-            @keyframes cursor {
-                from {
-                    border-color: #212121;
-                }
-
-                to {
-                    border-color: transparent;
-                }
-            }
-
-            @keyframes text {
-                from {
-                    width: 0;
-                }
-
-                to {
-                    width: 100%;
-                }
-            }
-        </style>
+       
         <section>
-            <style>
-                .event-calendar *,
-                .event-calendar div {
-                    -webkit-transition: all 0.3s ease;
-                    -moz-transition: all 0.3s ease;
-                    -ms-transition: all 0.3s ease;
-                    -o-transition: all 0.3s ease;
-                    transition: all 0.3s ease;
-                }
-
-
-                .event-calendar {
-                    border: 1px solid #ddd;
-                    width: 400px;
-                    margin: 40px;
-                    min-width: 300px;
-                    background: #ddd;
-
-                }
-
-                .event-calendar a {
-                    text-decoration: none;
-                    color: #181718;
-
-
-                }
-
-                .event-calendar a:hover {
-                    opacity: .7;
-                    color: #f00;
-                }
-
-                .event-calendar a:hover .title-event {
-                    transform: translate(5%, 0);
-                    -webkit-transform: translate(5%, 0);
-                    -moz-transform: translate(5%, 0);
-
-                }
-
-
-
-                .event-calendar ul,
-                .event-calendar ul li,
-                .event-calendar h1,
-                .event-calendar h2 {
-                    margin: 0;
-                    padding: 0;
-                    list-style: none;
-                }
-
-                .event-calendar .events-body ul li {
-                    position: relative;
-                    border-bottom: 1px solid #777474;
-                }
-
-                .event-calendar .events-body ul li:last-child {
-                    border: 0;
-                }
-
-                .event-calendar .heading-title {
-                    padding: 10px 20px;
-                    text-transform: uppercase;
-                    border-bottom: 4px solid #000;
-                    font-size: .9em;
-                    position: relative;
-                    font-family: 'Roboto', sans-serif;
-                }
-
-                .event-calendar .icon-box {
-                    position: absolute;
-                    right: 20px;
-                    top: 0;
-                    bottom: 0;
-                    margin: auto;
-                    height: 30px;
-                    font-size: 1.8em;
-                }
-
-                /* EVENTS LEFT CONTES */
-                .event-calendar .event-left-content {
-                    padding: 15px 20px;
-                }
-
-
-                .event-calendar .event-left-content .title-event,
-                .event-calendar .event-left-content .title-event h2,
-                .event-calendar .event-left-content .event-date,
-                .event-calendar .event-left-content .event-location {
-                    font-family: 'Roboto', sans-serif;
-                }
-
-                .event-calendar .event-left-content .title-event {
-                    width: 80%;
-                }
-
-                .event-calendar .event-left-content .title-event h2 {
-                    text-transform: uppercase;
-                    margin: 0;
-                    padding: 0;
-                }
-
-                .event-calendar .event-left-content .event-date {
-                    font-size: .8em;
-                }
-
-                .event-calendar .event-left-content .event-location {
-                    text-transform: uppercase;
-                    font-weight: bold;
-                    font-size: .8em;
-                }
-
-
-                /* EVENT ICON HOLDER  */
-                .event-calendar .event-icon {
-                    position: absolute;
-                    width: auto;
-                    height: 50px;
-                    display: block;
-                    background: #f00;
-                    right: 20px;
-                    top: 0;
-                    bottom: 0;
-                    margin: auto;
-                    text-align: center;
-                    color: #fff;
-
-                    -webkit-border-radius: 8px;
-                    border-radius: 8px;
-
-                    padding: 0px 12px;
-
-                }
-
-                .event-calendar .event-icon .month,
-                .event-calendar .event-icon .date {
-                    display: block;
-                }
-
-                .event-calendar .event-icon .month {
-                    text-transform: uppercase;
-                    font-weight: bold;
-                    font-size: 1.1em;
-
-                }
-
-                .event-calendar .event-icon .date {
-                    font-size: 1.1em;
-                    font-weight: bold;
-
-                }
-
-
-
-
-                /* FOR RESPONSIVE ONLY  */
-                @media only screen and (max-width:480px) {
-                    .event-calendar {
-                        width: 100%;
-                        margin: 0;
-                    }
-
-                    .event-calendar .heading-title h1 {
-                        font-size: 1em;
-                    }
-
-                    .event-calendar .title-event h2 {
-                        font-size: .9em;
-                    }
-
-                    .event-calendar .event-left-content .event-date,
-                    .event-calendar .event-left-content .event-location {
-                        font-size: .8em;
-                    }
-
-
-                }
-            </style>
+            
             <div data-aos="zoom-in-down">
             
        
@@ -552,87 +404,7 @@
                         </li>
                     </ul>
                     
-                    <style>
-                        .cards {
-                            display: grid;
-                            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-                            list-style: none;
-                            margin: 0;
-                            padding: 0;
-                        }
-
-                        .cards_item {
-                            display: flex;
-                            padding: 1rem;
-                        }
-
-                        .card_image {
-                            height: calc(13*1.2rem);
-                            padding: 1.2rem 1.2rem 0;
-                            position: relative;
-                        }
-
-                        .card_image:before,
-                        .card_image:after {
-                            content: "";
-                            position: absolute;
-                            width: 20px;
-                            left: 60%;
-                            top: 0;
-                            height: 45px;
-                            background: #e6e6e6b8;
-                            transform: rotate(45deg);
-                        }
-
-                        .card_image:after {
-                            transform: rotate(-45deg);
-                            top: auto;
-                            bottom: -22px;
-                            left: 40%;
-                        }
-
-                        .card_image img {
-                            width: 100%;
-                            height: 100%;
-                            object-fit: cover;
-                        }
-
-                        .cards_item {
-                            filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.25));
-                        }
-
-
-                        .card {
-                            background-color: white;
-                            border-radius: 0.25rem;
-                            display: flex;
-                            flex-direction: column;
-                            overflow: hidden;
-                            padding-left: 30px;
-                            background: repeating-linear-gradient(#0000 0 calc(1.2rem - 1px), #66afe1 0 1.2rem) right bottom /100% 100%, linear-gradient(red 0 0) 30px 0/2px 100% #fff;
-                            background-repeat: no-repeat;
-                            line-height: 1.2rem;
-                            -webkit-mask: radial-gradient(circle .8rem at 2px 50%, #0000 98%, #000)0 0/100% 2.4rem;
-                        }
-
-                        .card_content {
-                            padding: 1.2rem;
-                        }
-
-                        h2.card_title,
-                        p {
-                            margin: 1.2rem 0;
-                        }
-
-                        h2.card_title {
-                            font-size: 1.3em;
-                        }
-
-
-                        html {
-                            font-size: 15px;
-                        }
-                    </style>
+                   
                 </div>
             </div>  
             <div data-aos="zoom-in-down">  
@@ -705,7 +477,7 @@
 
                 <div class="border-transparent mt-[40px] mb-[40px] w-[100%] mr-2" style="background-color: #ddd;">
                     <div class="pb-6">
-                        <h1 class="text-3xl font-bold pl-4">Recent News</h1>
+                        <h1 class="text-3xl font-bold pl-4">Latest News</h1>
                         <i style="font-size:30px" class="fa float-right -mt-7 mr-5">&#xf1ea;</i>
                         <hr class="bg-black mt-[19px] pt-[4px] border-b-4">
                         <div class="md:flex md:space-x-4 md:px-2 ">
@@ -756,100 +528,7 @@
                 </div>
 
                 </div>
-                <style>
-                  
-
-                    @media screen and (max-width: 640px) {
-                        .con {
-                            display: block;
-                            width: 100%;
-                        }
-                    }
-
-                    @media screen and (min-width: 900px) {
-                        .con {
-                            width: 33.33333%;
-                        }
-                    }
-
-                    .con .title {
-                        color: #1a1a1a;
-                        text-align: center;
-                        margin-bottom: 10px;
-                    }
-
-                    .content {
-                        position: relative;
-                        width: 90%;
-                        max-width: 400px;
-                        margin: auto;
-                        overflow: hidden;
-
-                    }
-
-                    .content .content-overlay {
-                        background: rgba(0, 0, 0, 0.7);
-                        position: absolute;
-                        height: 99%;
-                        width: 100%;
-                        left: 0;
-                        top: 0;
-                        bottom: 0;
-                        right: 0;
-                        opacity: 0;
-                        -webkit-transition: all 0.4s ease-in-out 0s;
-                        -moz-transition: all 0.4s ease-in-out 0s;
-                        transition: all 0.4s ease-in-out 0s;
-                    }
-
-                    .content:hover .content-overlay {
-                        opacity: 1;
-                    }
-
-                    .content-image {
-                        width: 100%;
-                    }
-
-                    .content-details {
-                        position: absolute;
-                        text-align: center;
-                        padding-left: 1em;
-                        padding-right: 1em;
-                        width: 100%;
-                        top: 50%;
-                        left: 50%;
-                        opacity: 0;
-                        -webkit-transform: translate(-50%, -50%);
-                        -moz-transform: translate(-50%, -50%);
-                        transform: translate(-50%, -50%);
-                        -webkit-transition: all 0.3s ease-in-out 0s;
-                        -moz-transition: all 0.3s ease-in-out 0s;
-                        transition: all 0.3s ease-in-out 0s;
-                    }
-
-                    .content:hover .content-details {
-                        top: 50%;
-                        left: 50%;
-                        opacity: 1;
-                    }
-
-                    .content-details h3 {
-                        color: #fff;
-                        font-weight: 500;
-                        letter-spacing: 0.15em;
-                        margin-bottom: 0.5em;
-                        text-transform: uppercase;
-                    }
-
-                    .content-details p {
-                        color: #fff;
-                        font-size: 0.8em;
-                    }
-
-                    .fadeIn-bottom {
-                        top: 80%;
-                    }
-                </style>
+                
                 </div>
                 </section>
             </div>
@@ -920,118 +599,7 @@
                         </a>
                     </div>
                 </div>    
-                <style>
-                    @import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;700&display=swap");
-
-
-
-                    .testimonials {
-                        background: #fff;
-                        text-align: center;
-
-                        max-width: 800px;
-                        padding: 4rem;
-                        margin: 1.5rem auto;
-                        box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
-                    }
-
-
-
-                    .description {
-                        font-size: 0.95rem;
-                        color: #333;
-                    }
-
-                    .slider-container {
-                        margin-top: 2rem;
-                        margin: 2rem auto 0 auto;
-                        position: relative;
-                        overflow: hidden;
-                    }
-
-                    .slider {
-                        display: flex;
-                        flex: 0 0 1;
-                        width: 300%;
-                        /* Depends On slide-box Length * 100 */
-                        transition: all 0.5s linear;
-                    }
-
-                    .slide-box {
-                        padding: 0 80px;
-                    }
-
-                    .slide-box .comment {
-                        background-color: #000;
-                        color: #fff;
-                        font-size: 0.86rem;
-                        padding: 1rem 1.5rem;
-                        margin-bottom: 2rem;
-                        letter-spacing: 0.4px;
-                        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
-                        position: relative;
-                        font-weight: 400;
-                    }
-
-                    .slide-box .comment::before {
-                        content: "";
-                        position: absolute;
-                        left: 50%;
-                        bottom: -10px;
-                        height: 20px;
-                        width: 20px;
-                        background-color: #000;
-                        transform: translateX(-50%) rotate(45deg);
-                        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
-                    }
-
-                    .slide-box img {
-                        max-width: 60px;
-                        border-radius: 50%;
-                        display: flex;
-                        justify-content: center;
-
-
-                    }
-
-                    .slide-box .name {
-                        font-size: 1rem;
-                    }
-
-                    .slide-box .job {
-                        font-size: 0.7rem;
-                        color: #8d8e97;
-                        font-weight: 400;
-                    }
-
-                    .control-slider {
-                        position: absolute;
-                        z-index: 5;
-                        top: 50%;
-                        transform: translateY(-50%);
-                        height: 40px;
-                        width: 40px;
-                        background-color: #fff;
-                        line-height: 40px;
-                        color: #333;
-                        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
-                    }
-
-                    .btn-left {
-                        left: 10px;
-                    }
-
-                    .btn-right {
-                        right: 10px;
-                    }
-
-                    @media screen and (max-width: 500px) {
-                        .slide-box {
-                            padding: 60px;
-                            margin: 4px;
-                        }
-                    }
-                </style>
+               
             </div>
 
 
