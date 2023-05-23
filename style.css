@@ -82,426 +82,426 @@ html {
 
 
 /* Upcoming Events */
-                .event-calendar *,
-                .event-calendar div {
-                    -webkit-transition: all 0.3s ease;
-                    -moz-transition: all 0.3s ease;
-                    -ms-transition: all 0.3s ease;
-                    -o-transition: all 0.3s ease;
-                    transition: all 0.3s ease;
-                }
-
-
-                .event-calendar {
-                    border: 1px solid #ddd;
-                    width: 400px;
-                    margin: 40px;
-                    min-width: 300px;
-                    background: #ddd;
-
-                }
-
-                .event-calendar a {
-                    text-decoration: none;
-                    color: #181718;
-
-
-                }
-
-                .event-calendar a:hover {
-                    opacity: .7;
-                    color: #f00;
-                }
-
-                .event-calendar a:hover .title-event {
-                    transform: translate(5%, 0);
-                    -webkit-transform: translate(5%, 0);
-                    -moz-transform: translate(5%, 0);
-
-                }
-
-
-
-                .event-calendar ul,
-                .event-calendar ul li,
-                .event-calendar h1,
-                .event-calendar h2 {
-                    margin: 0;
-                    padding: 0;
-                    list-style: none;
-                }
-
-                .event-calendar .events-body ul li {
-                    position: relative;
-                    border-bottom: 1px solid #777474;
-                }
-
-                .event-calendar .events-body ul li:last-child {
-                    border: 0;
-                }
-
-                .event-calendar .heading-title {
-                    padding: 10px 20px;
-                    text-transform: uppercase;
-                    border-bottom: 4px solid #000;
-                    font-size: .9em;
-                    position: relative;
-                    font-family: 'Roboto', sans-serif;
-                }
-
-                .event-calendar .icon-box {
-                    position: absolute;
-                    right: 20px;
-                    top: 0;
-                    bottom: 0;
-                    margin: auto;
-                    height: 30px;
-                    font-size: 1.8em;
-                }
-
-                /* EVENTS LEFT CONTES */
-                .event-calendar .event-left-content {
-                    padding: 15px 20px;
-                }
-
-
-                .event-calendar .event-left-content .title-event,
-                .event-calendar .event-left-content .title-event h2,
-                .event-calendar .event-left-content .event-date,
-                .event-calendar .event-left-content .event-location {
-                    font-family: 'Roboto', sans-serif;
-                }
-
-                .event-calendar .event-left-content .title-event {
-                    width: 80%;
-                }
-
-                .event-calendar .event-left-content .title-event h2 {
-                    text-transform: uppercase;
-                    margin: 0;
-                    padding: 0;
-                }
-
-                .event-calendar .event-left-content .event-date {
-                    font-size: .8em;
-                }
-
-                .event-calendar .event-left-content .event-location {
-                    text-transform: uppercase;
-                    font-weight: bold;
-                    font-size: .8em;
-                }
-
-
-                /* EVENT ICON HOLDER  */
-                .event-calendar .event-icon {
-                    position: absolute;
-                    width: auto;
-                    height: 50px;
-                    display: block;
-                    background: #f00;
-                    right: 20px;
-                    top: 0;
-                    bottom: 0;
-                    margin: auto;
-                    text-align: center;
-                    color: #fff;
-
-                    -webkit-border-radius: 8px;
-                    border-radius: 8px;
-
-                    padding: 0px 12px;
-
-                }
-
-                .event-calendar .event-icon .month,
-                .event-calendar .event-icon .date {
-                    display: block;
-                }
-
-                .event-calendar .event-icon .month {
-                    text-transform: uppercase;
-                    font-weight: bold;
-                    font-size: 1.1em;
-
-                }
-
-                .event-calendar .event-icon .date {
-                    font-size: 1.1em;
-                    font-weight: bold;
-
-                }
-
-
-
-
-                /* FOR RESPONSIVE ONLY  */
-                @media only screen and (max-width:480px) {
-                    .event-calendar {
-                        width: 100%;
-                        margin: 0;
-                    }
-
-                    .event-calendar .heading-title h1 {
-                        font-size: 1em;
-                    }
-
-                    .event-calendar .title-event h2 {
-                        font-size: .9em;
-                    }
-
-                    .event-calendar .event-left-content .event-date,
-                    .event-calendar .event-left-content .event-location {
-                        font-size: .8em;
-                    }
-
-
-                }
-            /* Animated on moving words as a marquee */
-            
-            .container {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-
-
-                font-family: Raleway;
-                font-weight: bold;
-            }
-
-            .typewriter {
-                width: 30ch;
-                white-space: nowrap;
-                overflow: hidden;
-                border-right: 4px solid #212121;
-                animation: cursor 5s step-start infinite, text 15s steps(200) alternate infinite;
-            }
-
-            @keyframes cursor {
-                from {
-                    border-color: #212121;
-                }
-
-                to {
-                    border-color: transparent;
-                }
-            }
-
-            @keyframes text {
-                from {
-                    width: 0;
-                }
-
-                to {
-                    width: 100%;
-                }
-            }
-
-            /* News */
-            
-                  
-
-                    @media screen and (max-width: 640px) {
-                        .con {
-                            display: block;
-                            width: 100%;
-                        }
-                    }
-
-                    @media screen and (min-width: 900px) {
-                        .con {
-                            width: 33.33333%;
-                        }
-                    }
-
-                    .con .title {
-                        color: #1a1a1a;
-                        text-align: center;
-                        margin-bottom: 10px;
-                    }
-
-                    .content {
-                        position: relative;
-                        width: 90%;
-                        max-width: 400px;
-                        margin: auto;
-                        overflow: hidden;
-
-                    }
-
-                    .content .content-overlay {
-                        background: rgba(0, 0, 0, 0.7);
-                        position: absolute;
-                        height: 99%;
-                        width: 100%;
-                        left: 0;
-                        top: 0;
-                        bottom: 0;
-                        right: 0;
-                        opacity: 0;
-                        -webkit-transition: all 0.4s ease-in-out 0s;
-                        -moz-transition: all 0.4s ease-in-out 0s;
-                        transition: all 0.4s ease-in-out 0s;
-                    }
-
-                    .content:hover .content-overlay {
-                        opacity: 1;
-                    }
-
-                    .content-image {
-                        width: 100%;
-                    }
-
-                    .content-details {
-                        position: absolute;
-                        text-align: center;
-                        padding-left: 1em;
-                        padding-right: 1em;
-                        width: 100%;
-                        top: 50%;
-                        left: 50%;
-                        opacity: 0;
-                        -webkit-transform: translate(-50%, -50%);
-                        -moz-transform: translate(-50%, -50%);
-                        transform: translate(-50%, -50%);
-                        -webkit-transition: all 0.3s ease-in-out 0s;
-                        -moz-transition: all 0.3s ease-in-out 0s;
-                        transition: all 0.3s ease-in-out 0s;
-                    }
-
-                    .content:hover .content-details {
-                        top: 50%;
-                        left: 50%;
-                        opacity: 1;
-                    }
-
-                    .content-details h3 {
-                        color: #fff;
-                        font-weight: 500;
-                        letter-spacing: 0.15em;
-                        margin-bottom: 0.5em;
-                        text-transform: uppercase;
-                    }
-
-                    .content-details p {
-                        color: #fff;
-                        font-size: 0.8em;
-                    }
-
-                    .fadeIn-bottom {
-                        top: 80%;
-                    }
-                /* Testinomials */
-                
-                @import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;700&display=swap");
-
-
-
-                .testimonials {
-                    background: #fff;
-                    text-align: center;
-
-                    max-width: 800px;
-                    padding: 4rem;
-                    margin: 1.5rem auto;
-                    box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
-                }
-
-
-
-                .description {
-                    font-size: 0.95rem;
-                    color: #333;
-                }
-
-                .slider-container {
-                    margin-top: 2rem;
-                    margin: 2rem auto 0 auto;
-                    position: relative;
-                    overflow: hidden;
-                }
-
-                .slider {
-                    display: flex;
-                    flex: 0 0 1;
-                    width: 300%;
-                    /* Depends On slide-box Length * 100 */
-                    transition: all 0.5s linear;
-                }
-
-                .slide-box {
-                    padding: 0 80px;
-                }
-
-                .slide-box .comment {
-                    background-color: #000;
-                    color: #fff;
-                    font-size: 0.86rem;
-                    padding: 1rem 1.5rem;
-                    margin-bottom: 2rem;
-                    letter-spacing: 0.4px;
-                    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
-                    position: relative;
-                    font-weight: 400;
-                }
-
-                .slide-box .comment::before {
-                    content: "";
-                    position: absolute;
-                    left: 50%;
-                    bottom: -10px;
-                    height: 20px;
-                    width: 20px;
-                    background-color: #000;
-                    transform: translateX(-50%) rotate(45deg);
-                    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
-                }
-
-                .slide-box img {
-                    max-width: 60px;
-                    border-radius: 50%;
-                    display: flex;
-                    justify-content: center;
-
-
-                }
-
-                .slide-box .name {
-                    font-size: 1rem;
-                }
-
-                .slide-box .job {
-                    font-size: 0.7rem;
-                    color: #8d8e97;
-                    font-weight: 400;
-                }
-
-                .control-slider {
-                    position: absolute;
-                    z-index: 5;
-                    top: 50%;
-                    transform: translateY(-50%);
-                    height: 40px;
-                    width: 40px;
-                    background-color: #fff;
-                    line-height: 40px;
-                    color: #333;
-                    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
-                }
-
-                .btn-left {
-                    left: 10px;
-                }
-
-                .btn-right {
-                    right: 10px;
-                }
-
-                @media screen and (max-width: 500px) {
-                    .slide-box {
-                        padding: 60px;
-                        margin: 4px;
-                    }
-                }
-            
-        
+.event-calendar *,
+.event-calendar div {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+
+.event-calendar {
+    border: 1px solid #ddd;
+    width: 400px;
+    margin: 40px;
+    min-width: 300px;
+    background: #ddd;
+
+}
+
+.event-calendar a {
+    text-decoration: none;
+    color: #181718;
+
+
+}
+
+.event-calendar a:hover {
+    opacity: .7;
+    color: #f00;
+}
+
+.event-calendar a:hover .title-event {
+    transform: translate(5%, 0);
+    -webkit-transform: translate(5%, 0);
+    -moz-transform: translate(5%, 0);
+
+}
+
+
+
+.event-calendar ul,
+.event-calendar ul li,
+.event-calendar h1,
+.event-calendar h2 {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.event-calendar .events-body ul li {
+    position: relative;
+    border-bottom: 1px solid #777474;
+}
+
+.event-calendar .events-body ul li:last-child {
+    border: 0;
+}
+
+.event-calendar .heading-title {
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border-bottom: 4px solid #000;
+   font-size: larger;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+}
+
+.event-calendar .icon-box {
+    position: absolute;
+    right: 20px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 30px;
+    font-size: 1.8em;
+}
+
+/* EVENTS LEFT CONTES */
+.event-calendar .event-left-content {
+    padding: 15px 20px;
+}
+
+
+.event-calendar .event-left-content .title-event,
+.event-calendar .event-left-content .title-event h2,
+.event-calendar .event-left-content .event-date,
+.event-calendar .event-left-content .event-location {
+    font-family: 'Roboto', sans-serif;
+}
+
+.event-calendar .event-left-content .title-event {
+    width: 80%;
+}
+
+.event-calendar .event-left-content .title-event h2 {
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+}
+
+.event-calendar .event-left-content .event-date {
+    font-size: .8em;
+}
+
+.event-calendar .event-left-content .event-location {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: .8em;
+}
+
+
+/* EVENT ICON HOLDER  */
+.event-calendar .event-icon {
+    position: absolute;
+    width: auto;
+    height: 50px;
+    display: block;
+    background: #f00;
+    right: 20px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    text-align: center;
+    color: #fff;
+
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+
+    padding: 0px 12px;
+
+}
+
+.event-calendar .event-icon .month,
+.event-calendar .event-icon .date {
+    display: block;
+}
+
+.event-calendar .event-icon .month {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.1em;
+
+}
+
+.event-calendar .event-icon .date {
+    font-size: 1.1em;
+    font-weight: bold;
+
+}
+
+
+
+
+/* FOR RESPONSIVE ONLY  */
+@media only screen and (max-width:480px) {
+    .event-calendar {
+        width: 100%;
+        margin: 0;
+    }
+
+    .event-calendar .heading-title h1 {
+        font-size: 1em;
+    }
+
+    .event-calendar .title-event h2 {
+        font-size: .9em;
+    }
+
+    .event-calendar .event-left-content .event-date,
+    .event-calendar .event-left-content .event-location {
+        font-size: .8em;
+    }
+
+
+}
+
+/* Animated on moving words as a marquee */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    font-family: Raleway;
+    font-weight: bold;
+}
+
+.typewriter {
+    width: 30ch;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 4px solid #212121;
+    animation: cursor 5s step-start infinite, text 15s steps(200) alternate infinite;
+}
+
+@keyframes cursor {
+    from {
+        border-color: #212121;
+    }
+
+    to {
+        border-color: transparent;
+    }
+}
+
+@keyframes text {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+/* News */
+
+
+
+@media screen and (max-width: 640px) {
+    .con {
+        display: block;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .con {
+        width: 33.33333%;
+    }
+}
+
+.con .title {
+    color: #1a1a1a;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.content {
+    position: relative;
+    width: 90%;
+    max-width: 400px;
+    margin: auto;
+    overflow: hidden;
+
+}
+
+.content .content-overlay {
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    height: 99%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+}
+
+.content:hover .content-overlay {
+    opacity: 1;
+}
+
+.content-image {
+    width: 100%;
+}
+
+.content-details {
+    position: absolute;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.content:hover .content-details {
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+}
+
+.content-details h3 {
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+}
+
+.content-details p {
+    color: #fff;
+    font-size: 0.8em;
+}
+
+.fadeIn-bottom {
+    top: 80%;
+}
+
+/* Testinomials */
+
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;700&display=swap");
+
+
+
+.testimonials {
+    background: #fff;
+    text-align: center;
+
+    max-width: 800px;
+
+    margin: 1.5rem auto;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
+}
+
+
+
+.description {
+    font-size: 0.95rem;
+    color: #333;
+}
+
+.slider-container {
+    margin-top: 2rem;
+    margin: 2rem auto 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    flex: 0 0 1;
+    width: 300%;
+    /* Depends On slide-box Length * 100 */
+    transition: all 0.5s linear;
+}
+
+.slide-box {
+    padding: 0 80px;
+}
+
+.slide-box .comment {
+    background-color: #000;
+    color: #fff;
+    font-size: 0.86rem;
+    padding: 1rem 1.5rem;
+    margin-bottom: 2rem;
+    letter-spacing: 0.4px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    position: relative;
+    font-weight: 400;
+}
+
+.slide-box .comment::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    height: 20px;
+    width: 20px;
+    background-color: #000;
+    transform: translateX(-50%) rotate(45deg);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.slide-box img {
+    max-width: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.slide-box .name {
+    font-size: 1rem;
+}
+
+.slide-box .job {
+    font-size: 0.7rem;
+    color: #8d8e97;
+    font-weight: 400;
+}
+
+.control-slider {
+    position: absolute;
+    z-index: 5;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 40px;
+    width: 40px;
+    background-color: #fff;
+    line-height: 40px;
+    color: #333;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+}
+
+.btn-left {
+    left: 10px;
+}
+
+.btn-right {
+    right: 10px;
+}
+
+@media screen and (max-width: 500px) {
+    .slide-box {
+        padding: 60px;
+        margin: 4px;
+    }
+}
