@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="overflow-x: hidden;">
 
 <head>
     <meta charset="UTF-8">
@@ -13,24 +13,18 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,400i,700">
-    
+
     <link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/styles/tailwind.css">
     <link rel="stylesheet"
         href="https://demos.creative-tim.com/notus-js/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css">
-    <link rel="stylesheet" href="style.css">   
-    
-    
+    <link rel="stylesheet" href="./style.css">
+
+
 </head>
 
 <body>
     <nav class=" sticky-nav border md:h-16 pt-2 w-[100%]  bg-blue-900">
-        <style>
-            .sticky-nav {
-              position: sticky;
-              top: 0;
-              z-index: 999;
-            }
-          </style> 
+      
         <div class=" mx-auto flex flex-wrap items-center justify-between">
 
             <button data-collapse-toggle="mobile-menu" type="button"
@@ -49,7 +43,7 @@
                         d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
                         clip-rule="evenodd"></path>
                 </svg>
-            </button> 
+            </button>
             <a href="index.html">
                 <img src="./img/LOGO_SISNOVATE_FINAL_WHITE.png" alt=""
                     class="md:h-[6rem] md:w-[7rem] md:pb-14 md:ml-2 mr-2 h-[2rem] w-[6rem] "></a>
@@ -58,73 +52,75 @@
 
             <div class="hidden md:block w-full md:w-auto" id="mobile-menu">
 
-                <ul class="flex-col md:flex-row flex md:space-x-3 mt-4 md:mt-0 md:text-sm md:font-medium md:pb-12 md:mr-28 ">
+                <ul
+                    class="flex-col md:flex-row flex md:space-x-3 mt-4 md:mt-0 md:text-sm md:font-medium md:pb-12 md:mr-28 ">
                     <li>
                         <a href="index.html"
-                            class="  md:hover:border md:hover:border-white block p-4  py-2   rounded focus:outline-none md:text-lg md:font-semibold text-white"
+                            class="  md:hover:text-red-700 hover:shadow-lg   block p-4  py-2   rounded focus:outline-none md:text-lg md:font-semibold text-white"
                             aria-current="page">HOME</a>
                     </li>
                     <hr class="bg-transparent">
                     <li>
                         <a href="#">
-                        <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
-                            class="md:hover:border md:hover:border-white p-4  py-2   flex items-center justify-between w-full md:w-auto text-white md:text-lg md:font-semibold">ACADEMICS
-                            
-                            <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd"
-                                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                    clip-rule="evenodd"></path>
-                            </svg></button>
-                        <!-- Dropdown menu -->
-                        <div id="dropdownNavbar"
-                            class="hidden bg-white text-base z-10 list-none divide-y divide-gray-100 rounded shadow my-4 w-44">
-                            <ul class="py-1" aria-labelledby="dropdownLargeButton">
-                                <li>
-                                    <a href="onlineregistration.html"
-                                        class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Online Registration</a>
-                                </li>
-                                <hr class="bg-black">
-                                <li>
-                                    <a href="enquiry.html"
-                                        class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Enquiry</a>
-                                </li>
-                                
-                              
-                            </ul>
+                            <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
+                                class="md:hover:text-red-700 hover:shadow-lg   p-4  py-2   flex items-center justify-between w-full md:w-auto text-white md:text-lg md:font-semibold">ACADEMICS
 
-                        </div>
+                                <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                        clip-rule="evenodd"></path>
+                                </svg></button>
+                            <!-- Dropdown menu -->
+                            <div id="dropdownNavbar"
+                                class="hidden bg-white text-base z-10 list-none divide-y divide-gray-100 rounded shadow my-4 w-44">
+                                <ul class="py-1" aria-labelledby="dropdownLargeButton">
+                                    <li>
+                                        <a href="onlineregistration.html"
+                                            class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Online
+                                            Registration</a>
+                                    </li>
+                                    <hr class="bg-black">
+                                    <li>
+                                        <a href="enquiry.html"
+                                            class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Enquiry</a>
+                                    </li>
+
+
+                                </ul>
+
+                            </div>
                         </a>
                     </li>
-                    
+
                     <hr class="bg-transparent">
                     <li>
                         <a href="gallery.html"
-                            class="md:hover:border md:hover:border-white block p-4  py-2   rounded focus:outline-none md:text-lg md:font-semibold text-white"
+                            class="md:hover:text-red-700 hover:shadow-lg   block p-4  py-2   rounded focus:outline-none md:text-lg md:font-semibold text-white"
                             aria-current="page">GALLERY</a>
                     </li>
                     <hr class="bg-transparent">
                     <li>
                         <a href="aboutus.html"
-                            class="md:hover:border md:hover:border-white block p-4  py-2   rounded focus:outline-none md:text-lg md:font-semibold text-white"
+                            class="md:hover:text-red-700 hover:shadow-lg   block p-4  py-2   rounded focus:outline-none md:text-lg md:font-semibold text-white"
                             aria-current="page">ABOUT US</a>
                     </li>
                     <hr class="bg-transparent">
                     <li>
                         <a href="news&events.html"
-                            class="md:hover:border md:hover:border-white block p-4  py-2   rounded focus:outline-none md:text-lg md:font-semibold text-white"
+                            class="md:hover:text-red-700 hover:shadow-lg   block p-4  py-2   rounded focus:outline-none md:text-lg md:font-semibold text-white"
                             aria-current="page">NEWS & EVENTS</a>
                     </li>
                     <hr class="bg-transparent">
                     <li>
                         <a href="faculty.html"
-                            class="md:hover:border md:hover:border-white block p-4  py-2   rounded focus:outline-none md:text-lg md:font-semibold text-white"
+                            class="md:hover:text-red-700 hover:shadow-lg   block p-4  py-2   rounded focus:outline-none md:text-lg md:font-semibold text-white"
                             aria-current="page">FACULTY MEMBERS</a>
                     </li>
                     <hr class="bg-transparent">
                     <li>
                         <a href="contact.html"
-                            class="md:hover:border md:hover:border-white block p-4  py-2   rounded focus:outline-none md:text-lg md:font-semibold text-white"
+                            class="md:hover:text-red-700 hover:shadow-lg   block p-4  py-2   rounded focus:outline-none md:text-lg md:font-semibold text-white"
                             aria-current="page">CONTACT US</a>
                     </li>
 
@@ -133,347 +129,289 @@
                 </ul>
 
             </div>
-           
+
 
         </div>
 
 
     </nav>
-    <!DOCTYPE html>
-    <html lang="en">
 
-    <head>
-        <meta charset="utf-8" />
-        <title>Swiper demo</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" navigation="true"
+        space-between="30" loop="true">
 
+        <swiper-slide>
+            <div class="relative ">
+                <div class="md:h-[43rem] h-[20rem] bg-center bg-cover" style="background-image: url('./reading.jpg')">
+                    <div class="absolute  bottom-0 ">
+                        <div class="md:pb-20 md:pl-20 pl-4 text-transparent">
+                            <h2 class=" md:text-6xl text-3xl text-white opacity-90 font-bold md:mb-4">EDUCATING
+                            </h2>
+                            <span class=" md:text-4xl text-2xl text-white pb-2">LEADERS OF CHARACTERS</span>
 
-    </head>
-
-    <body>
-
-        <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" navigation="true"
-            space-between="30" loop="true">
-
-
-            <swiper-slide>
-                <div class="relative ">
-                    <div class="md:h-[43rem] h-[20rem] bg-center bg-cover"
-                        style="background-image: url('./reading.jpg')">
-                        <div class="absolute  bottom-0 ">
-                            <div class="md:pb-20 md:pl-20 pl-4 text-transparent">
-                                <h2 class=" md:text-6xl text-3xl text-white opacity-90 font-bold md:mb-4">EDUCATING
-                                </h2>
-                                <span class=" md:text-4xl text-2xl text-white pb-2">LEADERS OF CHARACTERS</span>
-                               
-                            </div>
                         </div>
-                    </div>
-                </div>
-            </swiper-slide>
-            <swiper-slide>
-                <div class="relative ">
-                    <div class="md:h-[43rem] h-[20rem] bg-center bg-cover"
-                        style="background-image: url('./reading.jpg')">
-                        <div class="absolute  bottom-0 ">
-                            <div class="md:pb-20 md:pl-20 pl-4 text-transparent">
-                                <h2 class=" md:text-6xl text-3xl text-white opacity-90 font-bold md:mb-4">EDUCATING
-                                </h2>
-                                <span class=" md:text-4xl text-2xl text-white pb-2">LEADERS OF CHARACTERS</span>
-                                <button class="border border-black"></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </swiper-slide>
-            <swiper-slide>
-                <div class="relative ">
-                    <div class="md:h-[43rem] h-[20rem] bg-center bg-cover"
-                        style="background-image: url('./reading.jpg')">
-                        <div class="absolute  bottom-0 ">
-                            <div class="md:pb-20 md:pl-20 pl-4 text-transparent">
-                                <h2 class=" md:text-6xl text-3xl text-white opacity-90 font-bold md:mb-4">EDUCATING
-                                </h2>
-                                <span class=" md:text-4xl text-2xl text-white pb-2">LEADERS OF CHARACTERS</span>
-                                <button class="border border-black"></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </swiper-slide>
-            <swiper-slide>
-                <div class="relative ">
-                    <div class="md:h-[43rem] h-[20rem] bg-center bg-cover"
-                        style="background-image: url('./reading.jpg')">
-                        <div class="absolute  bottom-0 ">
-                            <div class="md:pb-20 md:pl-20 pl-4 text-transparent">
-                                <h2 class=" md:text-6xl text-3xl text-white opacity-90 font-bold md:mb-4">EDUCATING
-                                </h2>
-                                <span class=" md:text-4xl text-2xl text-white pb-2">LEADERS OF CHARACTERS</span>
-                                <button class="border border-black"></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </swiper-slide>
-        </swiper-container>
-        <style>
-            .scroll-to-top {
-              display: none;
-              position: fixed;
-              bottom: 20px;
-              right: 20px;
-              z-index: 999;
-            }
-          </style>
-          <script>
-            function scrollToTop() {
-              window.scrollTo({ top: 0, behavior: 'smooth' });
-            }
-        
-            window.onscroll = function() {
-              var scrollToTopButton = document.getElementById('scrollToTopButton');
-              if (window.pageYOffset > 200) {
-                scrollToTopButton.style.display = 'block';
-              } else {
-                scrollToTopButton.style.display = 'none';
-              }
-            };
-          </script>
-       
-          <style>
-            .scroll-to-top {
-              display: none;
-              position: fixed;
-              bottom: 20px;
-              right: 20px;
-              z-index: 999;
-            }
-          </style>
-          <script>
-            function scrollToTop() {
-              window.scrollTo({ top: 0, behavior: 'smooth' });
-            }
-        
-            window.onscroll = function() {
-              var scrollToTopButton = document.getElementById('scrollToTopButton');
-              if (window.pageYOffset > 200) {
-                scrollToTopButton.style.display = 'block';
-              } else {
-                scrollToTopButton.style.display = 'none';
-              }
-            };
-          </script>
-       
-          <button id="scrollToTopButton" class="scroll-to-top bg-gray-800 hover:bg-gray-700 text-white py-2 px-4 rounded-full" onclick="scrollToTop()">
-            <i class="fa fa-angle-up" aria-hidden="true"></i>
-          </button>
-        <div class="pt-8 h-[20rem] pl-6 md:hidden sm:block ">
-            <h1 class="text-2xl font-bold text-blue-900">More than 50 years of experince</h1>
-            <p class="pt-2 text-lg"> adipisicing elit. Doloremque qui quisquam eligendi illum tenetur recusandae atque
-                iste possimus mollitia vitae. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta,
-                sit hic. Soluta atque, ullam officia eius culpa distinctio voluptatem nesciunt. Lorem, ipsum
-                dolor sit amet consectetur adipisicing elit. Possimus exercitationem sed aspernatur, provident
-                recusandae dignissimos quibusdam natus. Veniam eos inventore, dolore, et deserunt dolor vitae
-                omnis illum voluptatum corporis consequatur? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, sunt.</p>
-        </div>
-        <div class="md:pt-8  md:block pt-28">
-            <div class="flex ">
-                
-
-                <div data-aos="fade-down-right">
-                    <img src="./img/img1.jpg" alt="" class=" md:pl-6 md:h-[17rem] md:w-[35rem] md:pt-12 pt-24 w-[14rem] h-[16rem] pl-5">
-                </div>
-                <div data-aos="fade-down-left">
-                    <img src="./img/img2.jpg" alt="" class="md:pl-3   md:h-[300px] md:w-[40rem] pt-24  w-[14rem] h-[16rem] pl-3 pr-5">
-                </div>
-                <div class="md:float-right md:pt-12 hidden md:block md:w-[60%] md:h-[20rem] md:pl-6 ">
-                    <h1 class="text-2xl font-bold text-blue-900">More than 50 years of experince</h1>
-                    <p class="pt-4"> adipisicing elit. Doloremque qui quisquam eligendi illum tenetur recusandae atque
-                        iste possimus mollitia vitae. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta,
-                        sit hic. Soluta atque, ullam officia eius culpa distinctio voluptatem nesciunt. Lorem, ipsum
-                        dolor sit amet consectetur adipisicing elit. Possimus exercitationem sed aspernatur, provident
-                        recusandae dignissimos quibusdam natus. Veniam eos inventore, dolore, et deserunt dolor vitae
-                        omnis illum voluptatum corporis consequatur?</p>
-                </div>
-
-            </div>
-
-        </div>
-        <div class="md:pt-44 p-4 md:block ">
-            <div class="md:flex md:w-[70%]   ">
-                <div class="flex">
-                    <div data-aos="fade-up-right" class="">
-                        <img src="./img/img3.jpg" alt=""
-                            class=" md:pl-6 md:w-[30rem] md:h-[18rem] md:-mt-[14rem] md:border-8  md:border-white w-[14rem]   h-[10rem] ">
-                    </div>
-                    <div data-aos="fade-up-left">
-                        <img src="./img/img4.jpg" alt="" class="   md:-mt-[10.5rem] md:w-[18rem] md:h-[13rem] w-[14rem]  h-[10rem] md:pl-0   pl-3 ">
-                    </div>
-                </div>
-                <div data-aos="fade-down-left">
-                    <img src="./img/download.jpg" alt="" class=" md:pl-2  md:-mt-[10.5rem] md:w-[18rem] md:h-[13rem]  w-[25rem] h-[10rem] md:pt-0  pt-4 ">
-                </div>
-            </div>
-
-        </div>
-        <div class="border-2 m-2  bg-gray-800 p-6 mt-16">
-            <div class="border-2 bg-gray-600 ">
-                <div class="container">
-                    <div class="typewriter text-white p-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                        Iste harum, explicabo quasi doloribus quos quae necessitatibus corporis non labore quibusdam.
                     </div>
                 </div>
             </div>
-        </div>
-       
-
-       
-       
-        <section>
-            
-            <div data-aos="zoom-in-down">
-            
-       
-                <div class="pt-8">
-                    <h1 class="text-4xl font-bold text-center">OUR EVENTS</h1>
-                </div>
-                <div class="main">
-                    <ul class="cards">
-                        <li class="cards_item">
-                            <div class="card">
-                                <div class="card_image"><img
-                                        src="https://assets.codepen.io/652/photo-1468777675496-5782faaea55b.jpeg"
-                                        alt="mixed vegetable salad in a mason jar. "></div>
-                                <div class="card_content">
-                                    <h2 class="card_title">Farmstand Salad &#x2022; $9</h2>
-                                    <div class="card_text">
-                                        <p>Dig into the freshest veggies of the season! This salad-in-a-jar features a
-                                            mixture of leafy greens and seasonal vegetables, fresh from the farmer's market.
-                                        </p>
-                                        <p>Served with your choice of dressing on the side: housemade ranch, cherry balsamic
-                                            vinaigrette, creamy chipotle, avocado green goddess, or honey mustard. Add your
-                                            choice of protein for $2 more. </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="cards_item">
-                            <div class="card">
-                                <div class="card_image"><img
-                                        src="https://assets.codepen.io/652/photo-1520174691701-bc555a3404ca.jpeg"
-                                        alt="a Reuben sandwich on wax paper. "></div>
-                                <div class="card_content">
-                                    <h2 class="card_title">Ultimate Reuben &#x2022; $18</h2>
-                                    <div class="card_text">
-                                        <p>All great meals take time, but this one takes it to the next level! More than 650
-                                            hours of fermenting, brining, aging, and curing goes into each and every one of
-                                            our legendary Reuben sandwiches.
-                                        </p>
-                                        <p>Every element of this extraordinary sandwich is handcrafted in our kitchens, from
-                                            the rye bread baked from our secret recipe to the cave-aged Swiss cheese, right
-                                            down to the pickle. The only thing we didn't make on the premises is the
-                                            toothpick ( but we're looking into how to do that). </p>
-                                        <p>This unforgettable sandwich has all of the classic Reuben elements: corned beef,
-                                            rye bread, creamy Russian dressing, sauerkraut, plus a sweet gherkin pickle. No
-                                            substitions please!
-                                        <p>
-                                        <p>Add a side of french fries or sweet potato fries for $2 more, or our housemade
-                                            pub chips for $1.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="cards_item">
-                            <div class="card">
-                                <div class="card_image"><img
-                                        src="https://assets.codepen.io/652/photo-1544510808-91bcbee1df55.jpeg"
-                                        alt="A side view of a plate of figs and berries. "></div>
-                                <div class="card_content">
-                                    <h2 class="card_title">Fig &amp; Berry Plate &#x2022; $16</h2>
-                                    <div class="card_text">
-                                        <p><span class="note">Seasonal.</span></p>
-                                        <p>A succulent sextet of fresh figs join with a selection of bodacious seasonal
-                                            berries in this refreshing, shareable dessert.</p>
-                                        <p>Choose your drizzle: cherry-balsamic vinegar, local honey, or housemade chocolate
-                                            sauce. </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                    
-                   
-                </div>
-            </div>  
-            <div data-aos="zoom-in-down">  
-                <section class="md:flex md:p-0 p-4">
-                    <div class="event-calendar">
-                        <div class="heading-title">
-                            <h1 class="font-bold text-2xl ">Upcoming Events </h1>
-                            <div class="icon-box">
-                                <i class="fas fa-calendar-alt"></i>
-                            </div>
+        </swiper-slide>
+        <swiper-slide>
+            <div class="relative ">
+                <div class="md:h-[43rem] h-[20rem] bg-center bg-cover" style="background-image: url('./reading.jpg')">
+                    <div class="absolute  bottom-0 ">
+                        <div class="md:pb-20 md:pl-20 pl-4 text-transparent">
+                            <h2 class=" md:text-6xl text-3xl text-white opacity-90 font-bold md:mb-4">EDUCATING
+                            </h2>
+                            <span class=" md:text-4xl text-2xl text-white pb-2">LEADERS OF CHARACTERS</span>
+                            <button class="border border-black"></button>
                         </div>
-                        <div class="events-body">
-                            <ul>
-                                <li>
-                                    <a href="">
-                                        <div class="event-left-content">
-                                            <div class="title-event">
-                                                <h2 class="font-semibold"> sample event</h2>
-                                                <div class="event-date"> Feb 5, 2018</div>
-                                                <div class="event-location"> Alberta</div>
-                                            </div>
-                                        </div>
-                                        <div class="event-icon ">
-                                            <div class="month">jan </div>
-                                            <div class="date">01 </div>
-                                        </div>
-                                    </a>
-                                </li>
-
-
-                                <li>
-                                    <a href="">
-                                        <div class="event-left-content">
-                                            <div class="title-event">
-                                                <h2> sample event</h2>
-                                                <div class="event-date"> Feb 5, 2018</div>
-                                                <div class="event-location"> Alberta</div>
-                                            </div>
-                                        </div>
-                                        <div class="event-icon">
-                                            <div class="month">jan </div>
-                                            <div class="date">01 </div>
-                                        </div>
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="">
-                                        <div class="event-left-content">
-                                            <div class="title-event">
-                                                <h2> sample event</h2>
-                                                <div class="event-date"> Feb 5, 2018</div>
-                                                <div class="event-location"> Alberta</div>
-                                            </div>
-                                        </div>
-                                        <div class="event-icon">
-                                            <div class="month">jan </div>
-                                            <div class="date">01 </div>
-                                        </div>
-                                    </a>
-                                </li>
-
-
-                            </ul>
-                        </div>
-
                     </div>
-                
-                
+                </div>
+            </div>
+        </swiper-slide>
+        <swiper-slide>
+            <div class="relative ">
+                <div class="md:h-[43rem] h-[20rem] bg-center bg-cover" style="background-image: url('./reading.jpg')">
+                    <div class="absolute  bottom-0 ">
+                        <div class="md:pb-20 md:pl-20 pl-4 text-transparent">
+                            <h2 class=" md:text-6xl text-3xl text-white opacity-90 font-bold md:mb-4">EDUCATING
+                            </h2>
+                            <span class=" md:text-4xl text-2xl text-white pb-2">LEADERS OF CHARACTERS</span>
+                            <button class="border border-black"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </swiper-slide>
+        <swiper-slide>
+            <div class="relative ">
+                <div class="md:h-[43rem] h-[20rem] bg-center bg-cover" style="background-image: url('./reading.jpg')">
+                    <div class="absolute  bottom-0 ">
+                        <div class="md:pb-20 md:pl-20 pl-4 text-transparent">
+                            <h2 class=" md:text-6xl text-3xl text-white opacity-90 font-bold md:mb-4">EDUCATING
+                            </h2>
+                            <span class=" md:text-4xl text-2xl text-white pb-2">LEADERS OF CHARACTERS</span>
+                            <button class="border border-black"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </swiper-slide>
+    </swiper-container>
+
+    <button id="scrollToTopButton" class="scroll-to-top bg-gray-800 hover:bg-gray-700 text-white py-2 px-4 rounded-full"
+        onclick="scrollToTop()">
+        <i class="fa fa-angle-up" aria-hidden="true"></i>
+    </button>
+    <div class="pt-8  px-6 md:hidden sm:block ">
+        <h1 class="text-2xl font-bold text-blue-900">More than 50 years of experince</h1>
+        <p class="pt-2 text-lg"> adipisicing elit. Doloremque qui quisquam eligendi illum tenetur recusandae atque
+            iste possimus mollitia vitae. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta,
+            sit hic. Soluta atque, ullam officia eius culpa distinctio voluptatem nesciunt. Lorem, ipsum
+            dolor sit amet consectetur adipisicing elit. Possimus exercitationem sed aspernatur, provident
+            recusandae dignissimos quibusdam natus. Veniam eos inventore, dolore, et deserunt dolor vitae
+            omnis illum voluptatum corporis consequatur? Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Harum, sunt.</p>
+    </div>
+    <div class="md:pt-8  md:block pt-28">
+        <div class="flex ">
+
+
+            <div data-aos="fade-down-right">
+                <img src="./img/img1.jpg" alt=""
+                    class=" md:pl-6 md:h-[17rem] md:w-[35rem] md:pt-12 pt-24 w-[14rem] h-[16rem] pl-5">
+            </div>
+            <div data-aos="fade-down-left">
+                <img src="./img/img2.jpg" alt=""
+                    class="md:pl-3   md:h-[300px] md:w-[40rem] pt-24  w-[14rem] h-[16rem] pl-3 pr-5">
+            </div>
+            <div class="md:float-right md:pt-12 hidden md:block md:w-[60%] md:h-[20rem] md:pl-6 ">
+                <h1 class="text-2xl font-bold text-blue-900">More than 50 years of experince</h1>
+                <p class="pt-4"> adipisicing elit. Doloremque qui quisquam eligendi illum tenetur recusandae atque
+                    iste possimus mollitia vitae. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta,
+                    sit hic. Soluta atque, ullam officia eius culpa distinctio voluptatem nesciunt. Lorem, ipsum
+                    dolor sit amet consectetur adipisicing elit. Possimus exercitationem sed aspernatur, provident
+                    recusandae dignissimos quibusdam natus. Veniam eos inventore, dolore, et deserunt dolor vitae
+                    omnis illum voluptatum corporis consequatur?</p>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="md:pt-44 p-4 md:block ">
+        <div class="md:flex md:w-[70%]   ">
+            <div class="flex">
+                <div data-aos="fade-up-right" class="">
+                    <img src="./img/img3.jpg" alt=""
+                        class=" md:pl-6 md:w-[30rem] md:h-[18rem] md:-mt-[14rem] md:border-8  md:border-white w-[14rem]   h-[10rem] ">
+                </div>
+                <div data-aos="fade-up-left">
+                    <img src="./img/img4.jpg" alt=""
+                        class="   md:-mt-[10.5rem] md:w-[18rem] md:h-[13rem] w-[14rem]  h-[10rem] md:pl-0   pl-3 ">
+                </div>
+            </div>
+            <div data-aos="fade-down-left">
+                <img src="./img/download.jpg" alt=""
+                    class=" md:pl-2  md:-mt-[10.5rem] md:w-[18rem] md:h-[13rem]  w-[25rem] h-[10rem] md:pt-0  pt-4 ">
+            </div>
+        </div>
+
+    </div>
+    <div class="border-2 m-2  bg-gray-800 p-6 mt-16">
+        <div class="border-2 bg-gray-600 ">
+            <div class="container">
+                <div class="typewriter text-white p-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Iste harum, explicabo quasi doloribus quos quae necessitatibus corporis non labore quibusdam.
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <section>
+
+        <div data-aos="zoom-in-down">
+
+
+            <div class="pt-8">
+                <h1 class="text-4xl font-bold text-center">OUR EVENTS</h1>
+            </div>
+            <div class="main">
+                <ul class="cards">
+                    <li class="cards_item">
+                        <div class="card">
+                            <div class="card_image"><img
+                                    src="https://assets.codepen.io/652/photo-1468777675496-5782faaea55b.jpeg"
+                                    alt="mixed vegetable salad in a mason jar. "></div>
+                            <div class="card_content">
+                                <h2 class="card_title">Farmstand Salad &#x2022; $9</h2>
+                                <div class="card_text">
+                                    <p>Dig into the freshest veggies of the season! This salad-in-a-jar features a
+                                        mixture of leafy greens and seasonal vegetables, fresh from the farmer's market.
+                                    </p>
+                                    <p>Served with your choice of dressing on the side: housemade ranch, cherry balsamic
+                                        vinaigrette, creamy chipotle, avocado green goddess, or honey mustard. Add your
+                                        choice of protein for $2 more. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="cards_item">
+                        <div class="card">
+                            <div class="card_image"><img
+                                    src="https://assets.codepen.io/652/photo-1520174691701-bc555a3404ca.jpeg"
+                                    alt="a Reuben sandwich on wax paper. "></div>
+                            <div class="card_content">
+                                <h2 class="card_title">Ultimate Reuben &#x2022; $18</h2>
+                                <div class="card_text">
+                                    <p>All great meals take time, but this one takes it to the next level! More than 650
+                                        hours of fermenting, brining, aging, and curing goes into each and every one of
+                                        our legendary Reuben sandwiches.
+                                    </p>
+                                    <p>Every element of this extraordinary sandwich is handcrafted in our kitchens, from
+                                        the rye bread baked from our secret recipe to the cave-aged Swiss cheese, right
+                                        down to the pickle. The only thing we didn't make on the premises is the
+                                        toothpick ( but we're looking into how to do that). </p>
+                                    <p>This unforgettable sandwich has all of the classic Reuben elements: corned beef,
+                                        rye bread, creamy Russian dressing, sauerkraut, plus a sweet gherkin pickle. No
+                                        substitions please!
+                                    <p>
+                                    <p>Add a side of french fries or sweet potato fries for $2 more, or our housemade
+                                        pub chips for $1.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cards_item">
+                        <div class="card">
+                            <div class="card_image"><img
+                                    src="https://assets.codepen.io/652/photo-1544510808-91bcbee1df55.jpeg"
+                                    alt="A side view of a plate of figs and berries. "></div>
+                            <div class="card_content">
+                                <h2 class="card_title">Fig &amp; Berry Plate &#x2022; $16</h2>
+                                <div class="card_text">
+                                    <p><span class="note">Seasonal.</span></p>
+                                    <p>A succulent sextet of fresh figs join with a selection of bodacious seasonal
+                                        berries in this refreshing, shareable dessert.</p>
+                                    <p>Choose your drizzle: cherry-balsamic vinegar, local honey, or housemade chocolate
+                                        sauce. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+
+            </div>
+        </div>
+        <div data-aos="zoom-in-down">
+            <section class="md:flex md:p-0 p-4">
+                <div class="event-calendar">
+                    <div class="heading-title">
+                        <h1 class="font-bold text-2xl ">Upcoming Events </h1>
+                        <div class="icon-box">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                    </div>
+                    <div class="events-body">
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <div class="event-left-content">
+                                        <div class="title-event">
+                                            <h2 class="font-semibold"> sample event</h2>
+                                            <div class="event-date"> Feb 5, 2018</div>
+                                            <div class="event-location"> Alberta</div>
+                                        </div>
+                                    </div>
+                                    <div class="event-icon ">
+                                        <div class="month">jan </div>
+                                        <div class="date">01 </div>
+                                    </div>
+                                </a>
+                            </li>
+
+
+                            <li>
+                                <a href="">
+                                    <div class="event-left-content">
+                                        <div class="title-event">
+                                            <h2> sample event</h2>
+                                            <div class="event-date"> Feb 5, 2018</div>
+                                            <div class="event-location"> Alberta</div>
+                                        </div>
+                                    </div>
+                                    <div class="event-icon">
+                                        <div class="month">jan </div>
+                                        <div class="date">01 </div>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="">
+                                    <div class="event-left-content">
+                                        <div class="title-event">
+                                            <h2> sample event</h2>
+                                            <div class="event-date"> Feb 5, 2018</div>
+                                            <div class="event-location"> Alberta</div>
+                                        </div>
+                                    </div>
+                                    <div class="event-icon">
+                                        <div class="month">jan </div>
+                                        <div class="date">01 </div>
+                                    </div>
+                                </a>
+                            </li>
+
+
+                        </ul>
+                    </div>
+
+                </div>
+
+
 
                 <div class="border-transparent mt-[40px] mb-[40px] w-[100%] mr-2" style="background-color: #ddd;">
                     <div class="pb-6">
@@ -527,220 +465,178 @@
 
                 </div>
 
-                </div>
-                
-                </div>
-                </section>
-            </div>
+        </div>
 
-            <div data-aos="zoom-in-down">
-                <div class="testimonials md:p-[4rem] p-0   ">
-                    <h2 class="title text-2xl font-bold ">TESTIMONIALS</h2>
-                    <p class="description">We've been helping businesses to do their best since 2003.</p>
+        </div>
+    </section>
+    </div>
 
-                    <div class="slider-container">
-                        <div class="slider">
-                            <div class="slide-box   ">
-                                <!-- Testi One -->
-                                <p class="comment">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna
-                                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                                    aliquip ex ea commodo consequat.
-                                </p>
-                                <div class="flex justify-center">
-                                    <img
-                                        src="https://images.unsplash.com/photo-1595152452543-e5fc28ebc2b8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80" />
-                                </div>
-                                <h3 class="name">Albert Sinelly</h3>
-                                <h4 class="job">Founder Of Devoker Company</h4>
-                            </div>
-                            <div class="slide-box">
-                                <!-- Testi Two -->
-                                <p class="comment">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore
-                                    magna
-                                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                                    aliquip ex ea commodo
-                                    consequat.
-                                </p>
-                                <div class="flex justify-center">
-                                    <img src="https://images.unsplash.com/photo-1627541718143-1adc1b582e62?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8bXVzbGltfGVufDB8MnwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
-                                        class="" />
-                                </div>
-                                <h3 class="name">Hirok Meryam</h3>
-                                <h4 class="job">Full stack Developer, Speaker</h4>
-                            </div>
-                            <div class="slide-box">
-                                <!-- Testi Three -->
-                                <p class="comment">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore
-                                    magna
-                                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                                    aliquip ex ea commodo
-                                    consequat.
-                                </p>
-                                <div class="flex justify-center">
-                                    <img
-                                        src="https://images.unsplash.com/photo-1610216705422-caa3fcb6d158?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzJ8fGZhY2V8ZW58MHwyfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" />
-                                </div>
-                                <h3 class="name">Sebastian Sert</h3>
-                                <h4 class="job">Dr. Harshadlal Mehta</h4>
-                            </div>
+    <div data-aos="zoom-in-down">
+        <div class="testimonials md:p-[4rem] p-0   ">
+            <h2 class="title text-2xl font-bold ">TESTIMONIALS</h2>
+            <p class="description">We've been helping businesses to do their best since 2003.</p>
+
+            <div class="slider-container">
+                <div class="slider">
+                    <div class="slide-box   ">
+                        <!-- Testi One -->
+                        <p class="comment">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna
+                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                            aliquip ex ea commodo consequat.
+                        </p>
+                        <div class="flex justify-center">
+                            <img
+                                src="https://images.unsplash.com/photo-1595152452543-e5fc28ebc2b8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80" />
                         </div>
-
-                        <a href="#!" class="control-slider btn-left">
-                            <i class="fas fa-chevron-left"></i>
-                        </a>
-                        <a href="#!" class="control-slider btn-right">
-                            <i class="fas fa-chevron-right"></i>
-                        </a>
+                        <h3 class="name">Albert Sinelly</h3>
+                        <h4 class="job">Founder Of Devoker Company</h4>
                     </div>
-                </div>    
-               
-            </div>
-
-
-
-
-            <footer class="relative bg-blue-900 pt-8 pb-6">
-                <div class="container mx-auto ">
-                    <div class="md:flex md:flex-wrap text-left lg:text-left">
-                        <div class="w-full lg:w-6/12 px-4">
-                            <h4 class="text-3xl fonat-semibold text-white">Let's keep in touch!</h4>
-                            <h5 class="text-lg mt-0 mb-2 text-white">
-                                Find us on any of these platforms, we respond 1-2 business days.
-                            </h5>
-                            <div class="mt-6 lg:mb-0 mb-6">
-                                <button
-                                    class="bg-white text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
-                                    type="button">
-                                    <i class="fab fa-twitter"></i></button><button
-                                    class="bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
-                                    type="button">
-                                    <i class="fab fa-facebook-square"></i></button><button
-                                    class="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
-                                    type="button">
-                                    <i class="fab fa-dribbble"></i></button><button
-                                    class="bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
-                                    type="button">
-                                    <i class="fab fa-github"></i>
-                                </button>
-                            </div>
+                    <div class="slide-box">
+                        <!-- Testi Two -->
+                        <p class="comment">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore
+                            magna
+                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                            aliquip ex ea commodo
+                            consequat.
+                        </p>
+                        <div class="flex justify-center">
+                            <img src="https://images.unsplash.com/photo-1627541718143-1adc1b582e62?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8bXVzbGltfGVufDB8MnwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                                class="" />
                         </div>
-                        <div class="w-full lg:w-6/12 px-4">
-                            <div class="md:flex flex-wrap items-top mb-6">
-                                <div class="w-full lg:w-4/12 px-4 ml-auto">
-                                    <span class="block uppercase text-white text-md font-semibold mb-2">Useful
-                                        Links</span>
-                                    <ul class="list-unstyled">
-                                        <li>
-                                            <a class="text-white hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                                                href="">About
-                                                Us</a>
-                                        </li>
-                                        <li>
-                                            <a class="text-white hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                                                href="">Blog</a>
-                                        </li>
-                                        <li>
-                                            <a class="text-white hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                                                href="">Github</a>
-                                        </li>
-                                        <li>
-                                            <a class="text-white hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                                                href="">Free
-                                                Products</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="w-full lg:w-4/12 md:ml-32 ml-4 pt-4 md:pt-0">
-                                    <span class="block uppercase text-white text-md font-semibold mb-2">Other
-                                        Resources</span>
-                                    <ul class="list-unstyled">
-                                        <li>
-                                            <a class="text-white hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                                                href="">MIT
-                                                License</a>
-                                        </li>
-                                        <li>
-                                            <a class="text-white hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                                                href="">Terms &amp;
-                                                Conditions</a>
-                                        </li>
-                                        <li>
-                                            <a class="text-white hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                                                href="">Privacy
-                                                Policy</a>
-                                        </li>
-                                        <li>
-                                            <a class="text-white hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                                                href="">Contact
-                                                Us</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
+                        <h3 class="name">Hirok Meryam</h3>
+                        <h4 class="job">Full stack Developer, Speaker</h4>
+                    </div>
+                    <div class="slide-box">
+                        <!-- Testi Three -->
+                        <p class="comment">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore
+                            magna
+                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                            aliquip ex ea commodo
+                            consequat.
+                        </p>
+                        <div class="flex justify-center">
+                            <img
+                                src="https://images.unsplash.com/photo-1610216705422-caa3fcb6d158?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzJ8fGZhY2V8ZW58MHwyfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" />
+                        </div>
+                        <h3 class="name">Sebastian Sert</h3>
+                        <h4 class="job">Dr. Harshadlal Mehta</h4>
+                    </div>
+                </div>
+
+                <a href="#!" class="control-slider btn-left">
+                    <i class="fas fa-chevron-left"></i>
+                </a>
+                <a href="#!" class="control-slider btn-right">
+                    <i class="fas fa-chevron-right"></i>
+                </a>
+            </div>
+        </div>
+
+    </div>
+    <footer class="relative bg-blue-900 pt-8 pb-6">
+        <div class="container mx-auto ">
+            <div class="md:flex md:flex-wrap text-left lg:text-left">
+                <div class="w-full lg:w-6/12 px-4">
+                    <h4 class="text-3xl fonat-semibold text-white">Let's keep in touch!</h4>
+                    <h5 class="text-lg mt-0 mb-2 text-white">
+                        Find us on any of these platforms, we respond 1-2 business days.
+                    </h5>
+                    <div class="mt-6 lg:mb-0 mb-6">
+                        <button
+                            class="bg-white text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                            type="button">
+                            <i class="fab fa-twitter"></i></button><button
+                            class="bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                            type="button">
+                            <i class="fab fa-facebook-square"></i></button><button
+                            class="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                            type="button">
+                            <i class="fab fa-dribbble"></i></button><button
+                            class="bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                            type="button">
+                            <i class="fab fa-github"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="w-full lg:w-6/12 px-4">
+                    <div class="md:flex flex-wrap items-top mb-6">
+                        <div class="w-full lg:w-4/12 px-4 ml-auto">
+                            <span class="block uppercase text-white text-md font-semibold mb-2">Useful
+                                Links</span>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a class="text-white hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                                        href="">About
+                                        Us</a>
+                                </li>
+                                <li>
+                                    <a class="text-white hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                                        href="">Blog</a>
+                                </li>
+                                <li>
+                                    <a class="text-white hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                                        href="">Github</a>
+                                </li>
+                                <li>
+                                    <a class="text-white hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                                        href="">Free
+                                        Products</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="w-full lg:w-4/12 md:ml-32 ml-4 pt-4 md:pt-0">
+                            <span class="block uppercase text-white text-md font-semibold mb-2">Other
+                                Resources</span>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a class="text-white hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                                        href="">MIT
+                                        License</a>
+                                </li>
+                                <li>
+                                    <a class="text-white hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                                        href="">Terms &amp;
+                                        Conditions</a>
+                                </li>
+                                <li>
+                                    <a class="text-white hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                                        href="">Privacy
+                                        Policy</a>
+                                </li>
+                                <li>
+                                    <a class="text-white hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                                        href="">Contact
+                                        Us</a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
-                    
-                    
-                    
                 </div>
-                <hr class="my-4 border-blueGray-300">
-                <div>
-                    <h1 class="text-center text-white"> All Rights Reserved. © 2023   
-                        Created By</h1><h1 class=" text-center text-white font-bold"> Sisnovate</h1>
-                </div>
-            </footer>
-
-            <script>
-                const sliderElm = document.querySelector(".slider-container .slider");
-                const btnLeft = document.querySelector(".slider-container .btn-left");
-                const btnRight = document.querySelector(".slider-container .btn-right");
-
-                const numberSliderBoxs = sliderElm.children.length;
-                let idxCurrentSlide = 0;
-
-                // Functions:
-                function moveSlider() {
-                    let leftMargin = (sliderElm.clientWidth / numberSliderBoxs) * idxCurrentSlide;
-                    sliderElm.style.marginLeft = -leftMargin + "px";
-                    console.log(sliderElm.clientWidth, leftMargin);
-                }
-                function moveLeft() {
-                    if (idxCurrentSlide === 0) idxCurrentSlide = numberSliderBoxs - 1;
-                    else idxCurrentSlide--;
-
-                    moveSlider();
-                }
-                function moveRight() {
-                    if (idxCurrentSlide === numberSliderBoxs - 1) idxCurrentSlide = 0;
-                    else idxCurrentSlide++;
-
-                    moveSlider();
-                }
-
-                // Event Listeners:
-                btnLeft.addEventListener("click", moveLeft);
-                btnRight.addEventListener("click", moveRight);
-                window.addEventListener("resize", moveSlider);
-
-            </script>
+            </div>
 
 
 
+        </div>
+        <hr class="my-4 border-blueGray-300">
+        <div>
+            <h1 class="text-center text-white"> All Rights Reserved. © 2023
+                Created By</h1>
+            <h1 class=" text-center text-white font-bold"> Sisnovate</h1>
+        </div>
+    </footer>
+    <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://unpkg.com/@themesberg/flowbite@1.1.1/dist/flowbite.bundle.js"></script>
+</body>
 
-
-
-            <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
-            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-            <script>
-                AOS.init();
-            </script>
-            <script src="https://unpkg.com/@themesberg/flowbite@1.1.1/dist/flowbite.bundle.js"></script>
-    </body>
-
-    </html>
+</html>

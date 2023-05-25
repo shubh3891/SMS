@@ -1,5 +1,13 @@
 /* Our Events */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
 
+}
 .cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -499,6 +507,18 @@ html {
     right: 10px;
 }
 
+.scroll-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+  }
+  .sticky-nav {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
 @media screen and (max-width: 500px) {
     .slide-box {
         padding: 60px;
