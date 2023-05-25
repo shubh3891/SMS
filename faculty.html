@@ -8,17 +8,13 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet"
     href="https://demos.creative-tim.com/notus-js/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css">
+        <link rel="stylesheet" href="./style.css">
+
     
 </head>
 <body>
     <nav class=" sticky-nav border md:h-16 pt-2 w-[100%]  bg-blue-900">
-        <style>
-            .sticky-nav {
-              position: sticky;
-              top: 0;
-              z-index: 999;
-            }
-          </style> 
+      
         <div class=" mx-auto flex flex-wrap items-center justify-between">
 
             <button data-collapse-toggle="mobile-menu" type="button"
@@ -46,73 +42,75 @@
 
             <div class="hidden md:block w-full md:w-auto" id="mobile-menu">
 
-                <ul class="flex-col md:flex-row flex md:space-x-3 mt-4 md:mt-0 md:text-sm md:font-medium md:pb-12 md:mr-28 ">
+                <ul
+                    class="flex-col md:flex-row flex md:space-x-3 mt-4 md:mt-0 md:text-sm md:font-medium md:pb-12 md:mr-28 ">
                     <li>
                         <a href="index.html"
-                            class="  md:hover:border md:hover:border-white block p-4  py-2   rounded focus:outline-none md:text-lg md:font-semibold text-white"
+                            class="  md:hover:text-red-700 hover:shadow-lg   block p-4  py-2   rounded focus:outline-none md:text-lg md:font-semibold text-white"
                             aria-current="page">HOME</a>
                     </li>
                     <hr class="bg-transparent">
                     <li>
-                        <!-- <a href="academics.html"> -->
-                        <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
-                            class="md:hover:border md:hover:border-white p-4  py-2   flex items-center justify-between w-full md:w-auto text-white md:text-lg md:font-semibold">ACADEMICS
-                            
-                            <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd"
-                                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                    clip-rule="evenodd"></path>
-                            </svg></button>
-                        <!-- Dropdown menu -->
-                        <div id="dropdownNavbar"
-                            class="hidden bg-white text-base z-10 list-none divide-y divide-gray-100 rounded shadow my-4 w-44">
-                            <ul class="py-1" aria-labelledby="dropdownLargeButton">
-                                <li>
-                                    <a href="onlineregistration.html"
-                                        class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Online Registration</a>
-                                </li>
-                                <hr class="bg-black">
-                                <li>
-                                    <a href="enquiry.html"
-                                        class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Enquiry</a>
-                                </li>
-                                
-                              
-                            </ul>
+                        <a href="#">
+                            <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
+                                class="md:hover:text-red-700 hover:shadow-lg   p-4  py-2   flex items-center justify-between w-full md:w-auto text-white md:text-lg md:font-semibold">ACADEMICS
 
-                        </div>
-                        <!-- </a> -->
+                                <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                        clip-rule="evenodd"></path>
+                                </svg></button>
+                            <!-- Dropdown menu -->
+                            <div id="dropdownNavbar"
+                                class="hidden bg-white text-base z-10 list-none divide-y divide-gray-100 rounded shadow my-4 w-44">
+                                <ul class="py-1" aria-labelledby="dropdownLargeButton">
+                                    <li>
+                                        <a href="onlineregistration.html"
+                                            class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Online
+                                            Registration</a>
+                                    </li>
+                                    <hr class="bg-black">
+                                    <li>
+                                        <a href="enquiry.html"
+                                            class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Enquiry</a>
+                                    </li>
+
+
+                                </ul>
+
+                            </div>
+                        </a>
                     </li>
-                    
+
                     <hr class="bg-transparent">
                     <li>
                         <a href="gallery.html"
-                            class="md:hover:border md:hover:border-white block p-4  py-2   rounded focus:outline-none md:text-lg md:font-semibold text-white"
+                            class="md:hover:text-red-700 hover:shadow-lg   block p-4  py-2   rounded focus:outline-none md:text-lg md:font-semibold text-white"
                             aria-current="page">GALLERY</a>
                     </li>
                     <hr class="bg-transparent">
                     <li>
                         <a href="aboutus.html"
-                            class="md:hover:border md:hover:border-white block p-4  py-2   rounded focus:outline-none md:text-lg md:font-semibold text-white"
+                            class="md:hover:text-red-700 hover:shadow-lg   block p-4  py-2   rounded focus:outline-none md:text-lg md:font-semibold text-white"
                             aria-current="page">ABOUT US</a>
                     </li>
                     <hr class="bg-transparent">
                     <li>
                         <a href="news&events.html"
-                            class="md:hover:border md:hover:border-white block p-4  py-2   rounded focus:outline-none md:text-lg md:font-semibold text-white"
+                            class="md:hover:text-red-700 hover:shadow-lg   block p-4  py-2   rounded focus:outline-none md:text-lg md:font-semibold text-white"
                             aria-current="page">NEWS & EVENTS</a>
                     </li>
                     <hr class="bg-transparent">
                     <li>
                         <a href="faculty.html"
-                            class="md:hover:border md:hover:border-white block p-4  py-2   rounded focus:outline-none md:text-lg md:font-semibold text-white"
+                            class="md:hover:text-red-700 hover:shadow-lg   block p-4  py-2   rounded focus:outline-none md:text-lg md:font-semibold text-white"
                             aria-current="page">FACULTY MEMBERS</a>
                     </li>
                     <hr class="bg-transparent">
                     <li>
                         <a href="contact.html"
-                            class="md:hover:border md:hover:border-white block p-4  py-2   rounded focus:outline-none md:text-lg md:font-semibold text-white"
+                            class="md:hover:text-red-700 hover:shadow-lg   block p-4  py-2   rounded focus:outline-none md:text-lg md:font-semibold text-white"
                             aria-current="page">CONTACT US</a>
                     </li>
 
@@ -121,7 +119,7 @@
                 </ul>
 
             </div>
-           
+
 
         </div>
 
@@ -380,6 +378,8 @@
                     Created By</h1><h1 class=" text-center text-white font-bold"> Sisnovate</h1>
             </div>
         </footer>
+        <script src="./script.js"></script>
+
 </body>
 
 </html>

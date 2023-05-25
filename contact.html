@@ -10,121 +10,124 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
   <link rel="stylesheet"
         href="https://demos.creative-tim.com/notus-js/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css">
+        <link rel="stylesheet" href="./style.css">
+
 
 </head>
 
 <body>
-  <nav class=" sticky-nav border md:h-16 pt-2 w-[100%]  bg-blue-900">
-    <style>
-      .sticky-nav {
-        position: sticky;
-        top: 0;
-        z-index: 999;
-      }
-    </style>
-    <div class=" mx-auto flex flex-wrap items-center justify-between">
+    <nav class=" sticky-nav border md:h-16 pt-2 w-[100%]  bg-blue-900">
+      
+        <div class=" mx-auto flex flex-wrap items-center justify-between">
 
-      <button data-collapse-toggle="mobile-menu" type="button"
-        class="md:hidden ml-3 text-gray-400 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-300 rounded-lg inline-flex items-center justify-center"
-        aria-controls="mobile-menu-2" aria-expanded="false">
-        <span class="sr-only">Open main menu</span>
-        <svg class="w-6 h-6" fill="currentColor" style="color:white" viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd"
-            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-            clip-rule="evenodd"></path>
+            <button data-collapse-toggle="mobile-menu" type="button"
+                class="md:hidden ml-3 text-gray-400 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-300 rounded-lg inline-flex items-center justify-center"
+                aria-controls="mobile-menu-2" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-6 h-6" fill="currentColor" style="color:white" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                        clip-rule="evenodd"></path>
 
-        </svg>
-        <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd"
-            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-            clip-rule="evenodd"></path>
-        </svg>
-      </button>
-      <a href="index.html">
-        <img src="./img/LOGO_SISNOVATE_FINAL_WHITE.png" alt=""
-          class="md:h-[6rem] md:w-[7rem] md:pb-14 md:ml-2 mr-2 h-[2rem] w-[6rem] "></a>
+                </svg>
+                <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                        clip-rule="evenodd"></path>
+                </svg>
+            </button>
+            <a href="index.html">
+                <img src="./img/LOGO_SISNOVATE_FINAL_WHITE.png" alt=""
+                    class="md:h-[6rem] md:w-[7rem] md:pb-14 md:ml-2 mr-2 h-[2rem] w-[6rem] "></a>
 
 
 
-      <div class="hidden md:block w-full md:w-auto" id="mobile-menu">
+            <div class="hidden md:block w-full md:w-auto" id="mobile-menu">
 
-        <ul class="flex-col md:flex-row flex md:space-x-3 mt-4 md:mt-0 md:text-sm md:font-medium md:pb-12 md:mr-28 ">
-          <li>
-            <a href="index.html"
-              class="  md:hover:border md:hover:border-white block p-4  py-2   rounded focus:outline-none md:text-lg md:font-semibold text-white"
-              aria-current="page">HOME</a>
-          </li>
-          <hr class="bg-transparent">
-          <li>
-            <!-- <a href="academics.html"> -->
-            <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
-              class="md:hover:border md:hover:border-white p-4  py-2   flex items-center justify-between w-full md:w-auto text-white md:text-lg md:font-semibold">ACADEMICS
+                <ul
+                    class="flex-col md:flex-row flex md:space-x-3 mt-4 md:mt-0 md:text-sm md:font-medium md:pb-12 md:mr-28 ">
+                    <li>
+                        <a href="index.html"
+                            class="  md:hover:text-red-700 hover:shadow-lg   block p-4  py-2   rounded focus:outline-none md:text-lg md:font-semibold text-white"
+                            aria-current="page">HOME</a>
+                    </li>
+                    <hr class="bg-transparent">
+                    <li>
+                        <a href="#">
+                            <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
+                                class="md:hover:text-red-700 hover:shadow-lg   p-4  py-2   flex items-center justify-between w-full md:w-auto text-white md:text-lg md:font-semibold">ACADEMICS
 
-              <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd"
-                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                  clip-rule="evenodd"></path>
-              </svg></button>
-            <!-- Dropdown menu -->
-            <div id="dropdownNavbar"
-              class="hidden bg-white text-base z-10 list-none divide-y divide-gray-100 rounded shadow my-4 w-44">
-              <ul class="py-1" aria-labelledby="dropdownLargeButton">
-                <li>
-                  <a href="onlineregistration.html" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Online Registration</a>
-                </li>
-                <hr class="bg-black">
-                <li>
-                  <a href="enquiry.html" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Enquiry</a>
-                </li>
+                                <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                        clip-rule="evenodd"></path>
+                                </svg></button>
+                            <!-- Dropdown menu -->
+                            <div id="dropdownNavbar"
+                                class="hidden bg-white text-base z-10 list-none divide-y divide-gray-100 rounded shadow my-4 w-44">
+                                <ul class="py-1" aria-labelledby="dropdownLargeButton">
+                                    <li>
+                                        <a href="onlineregistration.html"
+                                            class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Online
+                                            Registration</a>
+                                    </li>
+                                    <hr class="bg-black">
+                                    <li>
+                                        <a href="enquiry.html"
+                                            class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Enquiry</a>
+                                    </li>
 
 
-              </ul>
+                                </ul>
+
+                            </div>
+                        </a>
+                    </li>
+
+                    <hr class="bg-transparent">
+                    <li>
+                        <a href="gallery.html"
+                            class="md:hover:text-red-700 hover:shadow-lg   block p-4  py-2   rounded focus:outline-none md:text-lg md:font-semibold text-white"
+                            aria-current="page">GALLERY</a>
+                    </li>
+                    <hr class="bg-transparent">
+                    <li>
+                        <a href="aboutus.html"
+                            class="md:hover:text-red-700 hover:shadow-lg   block p-4  py-2   rounded focus:outline-none md:text-lg md:font-semibold text-white"
+                            aria-current="page">ABOUT US</a>
+                    </li>
+                    <hr class="bg-transparent">
+                    <li>
+                        <a href="news&events.html"
+                            class="md:hover:text-red-700 hover:shadow-lg   block p-4  py-2   rounded focus:outline-none md:text-lg md:font-semibold text-white"
+                            aria-current="page">NEWS & EVENTS</a>
+                    </li>
+                    <hr class="bg-transparent">
+                    <li>
+                        <a href="faculty.html"
+                            class="md:hover:text-red-700 hover:shadow-lg   block p-4  py-2   rounded focus:outline-none md:text-lg md:font-semibold text-white"
+                            aria-current="page">FACULTY MEMBERS</a>
+                    </li>
+                    <hr class="bg-transparent">
+                    <li>
+                        <a href="contact.html"
+                            class="md:hover:text-red-700 hover:shadow-lg   block p-4  py-2   rounded focus:outline-none md:text-lg md:font-semibold text-white"
+                            aria-current="page">CONTACT US</a>
+                    </li>
+
+
+
+                </ul>
 
             </div>
-            <!-- </a> -->
-          </li>
-
-          <hr class="bg-transparent">
-          <li>
-            <a href="gallery.html"
-              class="md:hover:border md:hover:border-white block p-4  py-2   rounded focus:outline-none md:text-lg md:font-semibold text-white"
-              aria-current="page">GALLERY</a>
-          </li>
-          <hr class="bg-transparent">
-          <li>
-            <a href="aboutus.html"
-              class="md:hover:border md:hover:border-white block p-4  py-2   rounded focus:outline-none md:text-lg md:font-semibold text-white"
-              aria-current="page">ABOUT US</a>
-          </li>
-          <hr class="bg-transparent">
-          <li>
-            <a href="news&events.html"
-              class="md:hover:border md:hover:border-white block p-4  py-2   rounded focus:outline-none md:text-lg md:font-semibold text-white"
-              aria-current="page">NEWS & EVENTS</a>
-          </li>
-          <hr class="bg-transparent">
-          <li>
-            <a href="faculty.html"
-              class="md:hover:border md:hover:border-white block p-4  py-2   rounded focus:outline-none md:text-lg md:font-semibold text-white"
-              aria-current="page">FACULTY MEMBERS</a>
-          </li>
-          <hr class="bg-transparent">
-          <li>
-            <a href="contact.html"
-              class="md:hover:border md:hover:border-white block p-4  py-2   rounded focus:outline-none md:text-lg md:font-semibold text-white"
-              aria-current="page">CONTACT US</a>
-          </li>
 
 
-
-        </ul>
-
-      </div>
+        </div>
 
 
-    </div>
-  </nav>
+    </nav>
   <div class="md:flex ">
     <div>
       <img src="./img/contact-us-concept-illustration_114360-2299.avif" alt="" class="mb-4">
@@ -201,54 +204,7 @@
     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14288.066542714027!2d87.2741052!3d26.4551927!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ef7446212f2021%3A0x7f6e455ad959c6d5!2sAIMS%20College!5e0!3m2!1sen!2snp!4v1684836156013!5m2!1sen!2snp" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </div>
   
-  <style>
-    .scroll-to-top {
-      display: none;
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      z-index: 999;
-    }
-  </style>
-  <script>
-    function scrollToTop() {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-
-    window.onscroll = function() {
-      var scrollToTopButton = document.getElementById('scrollToTopButton');
-      if (window.pageYOffset > 200) {
-        scrollToTopButton.style.display = 'block';
-      } else {
-        scrollToTopButton.style.display = 'none';
-      }
-    };
-  </script>
-
-  <style>
-    .scroll-to-top {
-      display: none;
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      z-index: 999;
-    }
-  </style>
-  <script>
-    function scrollToTop() {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-
-    window.onscroll = function() {
-      var scrollToTopButton = document.getElementById('scrollToTopButton');
-      if (window.pageYOffset > 200) {
-        scrollToTopButton.style.display = 'block';
-      } else {
-        scrollToTopButton.style.display = 'none';
-      }
-    };
-  </script>
-
+ 
   <button id="scrollToTopButton" class="scroll-to-top bg-gray-800 hover:bg-gray-700 text-white py-2 px-4 rounded-full" onclick="scrollToTop()">
     <i class="fa fa-angle-up" aria-hidden="true"></i>
   </button>
@@ -346,6 +302,8 @@
             Created By</h1><h1 class=" text-center text-white font-bold"> Sisnovate</h1>
     </div>
 </footer>
+<script src="./script.js"></script>
+
 </body>
 
 </html>
